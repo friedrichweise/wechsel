@@ -9,35 +9,45 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
     @IBOutlet var tableView: NSTableView!
     var data: [[String: String]]?
-
+    var store: ConnectionStore?
+    var bridge: blueutilBridge?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let bridge = blueutilBridge()
-        data = [
-            [
-                "name" : "Kusifiri",
-                "status" : "5532612"
-            ],
-            [
-                "name" : "UE Boom 2",
-                "status" : "54329987"
-            ],
-            [
-                "name" : "JBL Go",
-                "status" : "53122543"
-            ]
-        ]
+        self.bridge = blueutilBridge()
+        self.store = self.bridge!.store
+
         tableView.reloadData()
         let indexSet = IndexSet(integer: 0)
         tableView.selectRowIndexes(indexSet, byExtendingSelection: false)
+        tableView.target = self
+        tableView.doubleAction = #selector(tableViewDoubleClick(_:))
+
         // Do any additional setup after loading the view.
+    }
+    @objc func tableViewDoubleClick(_ sender:AnyObject) {
+        connectToSelectedDevice();
+    }
+    override func keyDown(with event: NSEvent) {
+        //return or enter
+        if ((event.keyCode == 36) || (event.keyCode == 76)) {
+            connectToSelectedDevice()
+        }
+    }
+    func connectToSelectedDevice() {
+        guard tableView.selectedRow >= 0,
+            let item = store!.getConnectionByID(id: tableView.selectedRow) else {
+                return
+        }
+        self.bridge!.connectToDevice(address: item.address)
     }
     
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
 
@@ -47,7 +57,7 @@ class ViewController: NSViewController {
 extension ViewController: NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return data?.count ?? 0
+        return store?.getConnectionsCount() ?? 0
     }
     
 }
@@ -68,22 +78,27 @@ extension ViewController: NSTableViewDelegate {
         return true;
     }
     
+    func controlTextDidEndEditing(_ obj: Notification) {
+        print("Hello")
+    }
+    
+    
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
         var text: String = ""
         var cellIdentifier: String = ""
         
-        // 1
-        guard let item = data?[row] else {
+        //@todo: check before unwrapping optional
+        guard let row = store!.getConnectionByID(id: row) else {
             return nil
         }
         
         // 2
         if tableColumn == tableView.tableColumns[0] {
-            text = item["name"]!
+            text = row.name
             cellIdentifier = CellIdentifiers.NameCell
         } else if tableColumn == tableView.tableColumns[1] {
-            text = item["status"]!
+            text = String(row.connected)
             cellIdentifier = CellIdentifiers.StatusCell
         }
         
