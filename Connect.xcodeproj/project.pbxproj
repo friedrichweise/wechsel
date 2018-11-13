@@ -13,6 +13,9 @@
 		FDC07C16219AEE650028652C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC07C14219AEE650028652C /* Main.storyboard */; };
 		FDC07C22219AEE650028652C /* ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C21219AEE650028652C /* ConnectTests.swift */; };
 		FDC07C2D219AEE650028652C /* ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C2C219AEE650028652C /* ConnectUITests.swift */; };
+		FDC07C3B219AEEAD0028652C /* blueutilBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C3A219AEEAD0028652C /* blueutilBridge.swift */; };
+		FDC07C3E219AF4920028652C /* blueutil in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC07C3D219AF4920028652C /* blueutil */; };
+		FDC07C40219AF74A0028652C /* blueutil in Resources */ = {isa = PBXBuildFile; fileRef = FDC07C3F219AF4C10028652C /* blueutil */; settings = {ASSET_TAGS = (blueutil, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		FDC07C28219AEE650028652C /* ConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC07C2C219AEE650028652C /* ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectUITests.swift; sourceTree = "<group>"; };
 		FDC07C2E219AEE650028652C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC07C3A219AEEAD0028652C /* blueutilBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueutilBridge.swift; sourceTree = "<group>"; };
+		FDC07C3D219AF4920028652C /* blueutil */ = {isa = PBXFileReference; lastKnownFileType = folder; name = blueutil; path = ../blueutil; sourceTree = "<group>"; };
+		FDC07C3F219AF4C10028652C /* blueutil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = blueutil; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC07C3E219AF4920028652C /* blueutil in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				FDC07C0D219AEE630028652C /* Connect */,
+				FDC07C3F219AF4C10028652C /* blueutil */,
 				FDC07C20219AEE650028652C /* ConnectTests */,
 				FDC07C2B219AEE650028652C /* ConnectUITests */,
 				FDC07C0C219AEE630028652C /* Products */,
+				FDC07C3C219AF4910028652C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +111,7 @@
 				FDC07C14219AEE650028652C /* Main.storyboard */,
 				FDC07C17219AEE650028652C /* Info.plist */,
 				FDC07C18219AEE650028652C /* Connect.entitlements */,
+				FDC07C3A219AEEAD0028652C /* blueutilBridge.swift */,
 			);
 			path = Connect;
 			sourceTree = "<group>";
@@ -122,6 +132,14 @@
 				FDC07C2E219AEE650028652C /* Info.plist */,
 			);
 			path = ConnectUITests;
+			sourceTree = "<group>";
+		};
+		FDC07C3C219AF4910028652C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDC07C3D219AF4920028652C /* blueutil */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,12 +204,21 @@
 		FDC07C03219AEE630028652C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+					blueutil,
+				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Friedrich Weise";
 				TargetAttributes = {
 					FDC07C0A219AEE630028652C = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					FDC07C1C219AEE650028652C = {
 						CreatedOnToolsVersion = 10.1;
@@ -230,6 +257,7 @@
 			files = (
 				FDC07C13219AEE650028652C /* Assets.xcassets in Resources */,
 				FDC07C16219AEE650028652C /* Main.storyboard in Resources */,
+				FDC07C40219AF74A0028652C /* blueutil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +284,7 @@
 			files = (
 				FDC07C11219AEE630028652C /* ViewController.swift in Sources */,
 				FDC07C0F219AEE630028652C /* AppDelegate.swift in Sources */,
+				FDC07C3B219AEEAD0028652C /* blueutilBridge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +450,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Connect/Connect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Connect/Info.plist;
@@ -439,7 +467,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Connect/Connect.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Connect/Info.plist;
