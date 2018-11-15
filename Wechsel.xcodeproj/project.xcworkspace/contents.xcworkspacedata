@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/friedrichweise/repos/Connect/Wechsel.xcodeproj">
+      location = "group:blueutil">
+   </FileRef>
+   <FileRef
+      location = "self:wechsel.xcodeproj">
    </FileRef>
 </Workspace>

@@ -7,77 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDC07C0F219AEE630028652C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C0E219AEE630028652C /* AppDelegate.swift */; };
-		FDC07C11219AEE630028652C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C10219AEE630028652C /* ViewController.swift */; };
-		FDC07C13219AEE650028652C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC07C12219AEE650028652C /* Assets.xcassets */; };
-		FDC07C16219AEE650028652C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC07C14219AEE650028652C /* Main.storyboard */; };
-		FDC07C22219AEE650028652C /* ConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C21219AEE650028652C /* ConnectTests.swift */; };
-		FDC07C2D219AEE650028652C /* ConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C2C219AEE650028652C /* ConnectUITests.swift */; };
-		FDC07C3B219AEEAD0028652C /* blueutilBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C3A219AEEAD0028652C /* blueutilBridge.swift */; };
-		FDC07C3E219AF4920028652C /* blueutil in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC07C3D219AF4920028652C /* blueutil */; };
-		FDC07C40219AF74A0028652C /* blueutil in Resources */ = {isa = PBXBuildFile; fileRef = FDC07C3F219AF4C10028652C /* blueutil */; settings = {ASSET_TAGS = (blueutil, ); }; };
-		FDC07C4B219B0F610028652C /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C4A219B0F610028652C /* WindowController.swift */; };
-		FDC07C4D219B10AD0028652C /* ConnectWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C4C219B10AD0028652C /* ConnectWindow.swift */; };
-		FDC07C4F219B3C640028652C /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC07C4E219B3C640028652C /* Connection.swift */; };
+		FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */; };
+		FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF41903219DD5D700A8E8E1 /* Assets.xcassets */; };
+		FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF41905219DD5D700A8E8E1 /* MainMenu.xib */; };
+		FDF41913219DD5D700A8E8E1 /* wechselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41912219DD5D700A8E8E1 /* wechselTests.swift */; };
+		FDF4191E219DD65A00A8E8E1 /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF4191D219DD65A00A8E8E1 /* MainMenuController.swift */; };
+		FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */; };
+		FDF41922219DD81600A8E8E1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF41920219DD81600A8E8E1 /* MainWindow.xib */; };
+		FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41923219DD93400A8E8E1 /* ViewController.swift */; };
+		FDF41927219DD94600A8E8E1 /* blueutilBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41925219DD94600A8E8E1 /* blueutilBridge.swift */; };
+		FDF41928219DD94600A8E8E1 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41926219DD94600A8E8E1 /* Connection.swift */; };
+		FDF4192E219DDD0F00A8E8E1 /* blueutil in Resources */ = {isa = PBXBuildFile; fileRef = FDF4192D219DDD0F00A8E8E1 /* blueutil */; settings = {ASSET_TAGS = (blueutil, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FDC07C1E219AEE650028652C /* PBXContainerItemProxy */ = {
+		FDF4190F219DD5D700A8E8E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FDC07C03219AEE630028652C /* Project object */;
+			containerPortal = FDF418F6219DD5D500A8E8E1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FDC07C0A219AEE630028652C;
-			remoteInfo = Connect;
-		};
-		FDC07C29219AEE650028652C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FDC07C03219AEE630028652C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FDC07C0A219AEE630028652C;
-			remoteInfo = Connect;
+			remoteGlobalIDString = FDF418FD219DD5D500A8E8E1;
+			remoteInfo = wechsel;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FDC07C0B219AEE630028652C /* Wechsel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wechsel.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDC07C0E219AEE630028652C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDC07C10219AEE630028652C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDC07C12219AEE650028652C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDC07C15219AEE650028652C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDC07C17219AEE650028652C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDC07C18219AEE650028652C /* Connect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Connect.entitlements; sourceTree = "<group>"; };
-		FDC07C1D219AEE650028652C /* WechselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WechselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDC07C21219AEE650028652C /* ConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectTests.swift; sourceTree = "<group>"; };
-		FDC07C23219AEE650028652C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDC07C28219AEE650028652C /* WechselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WechselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDC07C2C219AEE650028652C /* ConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectUITests.swift; sourceTree = "<group>"; };
-		FDC07C2E219AEE650028652C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDC07C3A219AEEAD0028652C /* blueutilBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueutilBridge.swift; sourceTree = "<group>"; };
-		FDC07C3D219AF4920028652C /* blueutil */ = {isa = PBXFileReference; lastKnownFileType = folder; name = blueutil; path = ../blueutil; sourceTree = "<group>"; };
-		FDC07C3F219AF4C10028652C /* blueutil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = blueutil; sourceTree = "<group>"; };
-		FDC07C4A219B0F610028652C /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
-		FDC07C4C219B10AD0028652C /* ConnectWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectWindow.swift; sourceTree = "<group>"; };
-		FDC07C4E219B3C640028652C /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		FDC07C50219B6C410028652C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FDF418FE219DD5D500A8E8E1 /* wechsel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechsel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDF41903219DD5D700A8E8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDF41906219DD5D700A8E8E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FDF41908219DD5D700A8E8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF41909219DD5D700A8E8E1 /* wechsel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wechsel.entitlements; sourceTree = "<group>"; };
+		FDF4190E219DD5D700A8E8E1 /* wechselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wechselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF41912219DD5D700A8E8E1 /* wechselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wechselTests.swift; sourceTree = "<group>"; };
+		FDF41914219DD5D700A8E8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF4191D219DD65A00A8E8E1 /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		FDF41920219DD81600A8E8E1 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		FDF41923219DD93400A8E8E1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDF41925219DD94600A8E8E1 /* blueutilBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blueutilBridge.swift; sourceTree = "<group>"; };
+		FDF41926219DD94600A8E8E1 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		FDF4192D219DDD0F00A8E8E1 /* blueutil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = blueutil; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FDC07C08219AEE630028652C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDC07C3E219AF4920028652C /* blueutil in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDC07C1A219AEE650028652C /* Frameworks */ = {
+		FDF418FB219DD5D500A8E8E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDC07C25219AEE650028652C /* Frameworks */ = {
+		FDF4190B219DD5D700A8E8E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,162 +67,126 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FDC07C02219AEE620028652C = {
+		FDF418F5219DD5D500A8E8E1 = {
 			isa = PBXGroup;
 			children = (
-				FDC07C50219B6C410028652C /* README.md */,
-				FDC07C0D219AEE630028652C /* Connect */,
-				FDC07C3F219AF4C10028652C /* blueutil */,
-				FDC07C20219AEE650028652C /* ConnectTests */,
-				FDC07C2B219AEE650028652C /* ConnectUITests */,
-				FDC07C0C219AEE630028652C /* Products */,
-				FDC07C3C219AF4910028652C /* Frameworks */,
+				FDF41900219DD5D500A8E8E1 /* wechsel */,
+				FDF4192F219DDD1600A8E8E1 /* Frameworks */,
+				FDF41911219DD5D700A8E8E1 /* wechselTests */,
+				FDF418FF219DD5D500A8E8E1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FDC07C0C219AEE630028652C /* Products */ = {
+		FDF418FF219DD5D500A8E8E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDC07C0B219AEE630028652C /* Wechsel.app */,
-				FDC07C1D219AEE650028652C /* WechselTests.xctest */,
-				FDC07C28219AEE650028652C /* WechselUITests.xctest */,
+				FDF418FE219DD5D500A8E8E1 /* wechsel.app */,
+				FDF4190E219DD5D700A8E8E1 /* wechselTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FDC07C0D219AEE630028652C /* Connect */ = {
+		FDF41900219DD5D500A8E8E1 /* wechsel */ = {
 			isa = PBXGroup;
 			children = (
-				FDC07C0E219AEE630028652C /* AppDelegate.swift */,
-				FDC07C4A219B0F610028652C /* WindowController.swift */,
-				FDC07C10219AEE630028652C /* ViewController.swift */,
-				FDC07C12219AEE650028652C /* Assets.xcassets */,
-				FDC07C14219AEE650028652C /* Main.storyboard */,
-				FDC07C17219AEE650028652C /* Info.plist */,
-				FDC07C18219AEE650028652C /* Connect.entitlements */,
-				FDC07C3A219AEEAD0028652C /* blueutilBridge.swift */,
-				FDC07C4C219B10AD0028652C /* ConnectWindow.swift */,
-				FDC07C4E219B3C640028652C /* Connection.swift */,
+				FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */,
+				FDF41903219DD5D700A8E8E1 /* Assets.xcassets */,
+				FDF41905219DD5D700A8E8E1 /* MainMenu.xib */,
+				FDF41908219DD5D700A8E8E1 /* Info.plist */,
+				FDF41909219DD5D700A8E8E1 /* wechsel.entitlements */,
+				FDF4191D219DD65A00A8E8E1 /* MainMenuController.swift */,
+				FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */,
+				FDF41920219DD81600A8E8E1 /* MainWindow.xib */,
+				FDF41923219DD93400A8E8E1 /* ViewController.swift */,
+				FDF41925219DD94600A8E8E1 /* blueutilBridge.swift */,
+				FDF41926219DD94600A8E8E1 /* Connection.swift */,
 			);
-			path = Connect;
+			path = wechsel;
 			sourceTree = "<group>";
 		};
-		FDC07C20219AEE650028652C /* ConnectTests */ = {
+		FDF41911219DD5D700A8E8E1 /* wechselTests */ = {
 			isa = PBXGroup;
 			children = (
-				FDC07C21219AEE650028652C /* ConnectTests.swift */,
-				FDC07C23219AEE650028652C /* Info.plist */,
+				FDF41912219DD5D700A8E8E1 /* wechselTests.swift */,
+				FDF41914219DD5D700A8E8E1 /* Info.plist */,
 			);
-			path = ConnectTests;
+			path = wechselTests;
 			sourceTree = "<group>";
 		};
-		FDC07C2B219AEE650028652C /* ConnectUITests */ = {
+		FDF4192F219DDD1600A8E8E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FDC07C2C219AEE650028652C /* ConnectUITests.swift */,
-				FDC07C2E219AEE650028652C /* Info.plist */,
+				FDF4192D219DDD0F00A8E8E1 /* blueutil */,
 			);
-			path = ConnectUITests;
-			sourceTree = "<group>";
-		};
-		FDC07C3C219AF4910028652C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FDC07C3D219AF4920028652C /* blueutil */,
-			);
-			name = Frameworks;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FDC07C0A219AEE630028652C /* Wechsel */ = {
+		FDF418FD219DD5D500A8E8E1 /* wechsel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDC07C31219AEE650028652C /* Build configuration list for PBXNativeTarget "Wechsel" */;
+			buildConfigurationList = FDF41917219DD5D700A8E8E1 /* Build configuration list for PBXNativeTarget "wechsel" */;
 			buildPhases = (
-				FDC07C07219AEE630028652C /* Sources */,
-				FDC07C08219AEE630028652C /* Frameworks */,
-				FDC07C09219AEE630028652C /* Resources */,
+				FDF418FA219DD5D500A8E8E1 /* Sources */,
+				FDF418FB219DD5D500A8E8E1 /* Frameworks */,
+				FDF418FC219DD5D500A8E8E1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Wechsel;
-			productName = Connect;
-			productReference = FDC07C0B219AEE630028652C /* Wechsel.app */;
+			name = wechsel;
+			productName = wechsel;
+			productReference = FDF418FE219DD5D500A8E8E1 /* wechsel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FDC07C1C219AEE650028652C /* WechselTests */ = {
+		FDF4190D219DD5D700A8E8E1 /* wechselTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDC07C34219AEE650028652C /* Build configuration list for PBXNativeTarget "WechselTests" */;
+			buildConfigurationList = FDF4191A219DD5D700A8E8E1 /* Build configuration list for PBXNativeTarget "wechselTests" */;
 			buildPhases = (
-				FDC07C19219AEE650028652C /* Sources */,
-				FDC07C1A219AEE650028652C /* Frameworks */,
-				FDC07C1B219AEE650028652C /* Resources */,
+				FDF4190A219DD5D700A8E8E1 /* Sources */,
+				FDF4190B219DD5D700A8E8E1 /* Frameworks */,
+				FDF4190C219DD5D700A8E8E1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FDC07C1F219AEE650028652C /* PBXTargetDependency */,
+				FDF41910219DD5D700A8E8E1 /* PBXTargetDependency */,
 			);
-			name = WechselTests;
-			productName = ConnectTests;
-			productReference = FDC07C1D219AEE650028652C /* WechselTests.xctest */;
+			name = wechselTests;
+			productName = wechselTests;
+			productReference = FDF4190E219DD5D700A8E8E1 /* wechselTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FDC07C27219AEE650028652C /* WechselUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FDC07C37219AEE650028652C /* Build configuration list for PBXNativeTarget "WechselUITests" */;
-			buildPhases = (
-				FDC07C24219AEE650028652C /* Sources */,
-				FDC07C25219AEE650028652C /* Frameworks */,
-				FDC07C26219AEE650028652C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FDC07C2A219AEE650028652C /* PBXTargetDependency */,
-			);
-			name = WechselUITests;
-			productName = ConnectUITests;
-			productReference = FDC07C28219AEE650028652C /* WechselUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FDC07C03219AEE630028652C /* Project object */ = {
+		FDF418F6219DD5D500A8E8E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				KnownAssetTags = (
-					New,
 					blueutil,
 				);
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Friedrich Weise";
 				TargetAttributes = {
-					FDC07C0A219AEE630028652C = {
+					FDF418FD219DD5D500A8E8E1 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 0;
 							};
 						};
 					};
-					FDC07C1C219AEE650028652C = {
+					FDF4190D219DD5D700A8E8E1 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = FDC07C0A219AEE630028652C;
-					};
-					FDC07C27219AEE650028652C = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = FDC07C0A219AEE630028652C;
+						TestTargetID = FDF418FD219DD5D500A8E8E1;
 					};
 				};
 			};
-			buildConfigurationList = FDC07C06219AEE630028652C /* Build configuration list for PBXProject "Wechsel" */;
+			buildConfigurationList = FDF418F9219DD5D500A8E8E1 /* Build configuration list for PBXProject "wechsel" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -250,37 +194,30 @@
 				en,
 				Base,
 			);
-			mainGroup = FDC07C02219AEE620028652C;
-			productRefGroup = FDC07C0C219AEE630028652C /* Products */;
+			mainGroup = FDF418F5219DD5D500A8E8E1;
+			productRefGroup = FDF418FF219DD5D500A8E8E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDC07C0A219AEE630028652C /* Wechsel */,
-				FDC07C1C219AEE650028652C /* WechselTests */,
-				FDC07C27219AEE650028652C /* WechselUITests */,
+				FDF418FD219DD5D500A8E8E1 /* wechsel */,
+				FDF4190D219DD5D700A8E8E1 /* wechselTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FDC07C09219AEE630028652C /* Resources */ = {
+		FDF418FC219DD5D500A8E8E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC07C13219AEE650028652C /* Assets.xcassets in Resources */,
-				FDC07C16219AEE650028652C /* Main.storyboard in Resources */,
-				FDC07C40219AF74A0028652C /* blueutil in Resources */,
+				FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */,
+				FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */,
+				FDF4192E219DDD0F00A8E8E1 /* blueutil in Resources */,
+				FDF41922219DD81600A8E8E1 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDC07C1B219AEE650028652C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDC07C26219AEE650028652C /* Resources */ = {
+		FDF4190C219DD5D700A8E8E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,63 +227,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FDC07C07219AEE630028652C /* Sources */ = {
+		FDF418FA219DD5D500A8E8E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC07C4B219B0F610028652C /* WindowController.swift in Sources */,
-				FDC07C4F219B3C640028652C /* Connection.swift in Sources */,
-				FDC07C11219AEE630028652C /* ViewController.swift in Sources */,
-				FDC07C0F219AEE630028652C /* AppDelegate.swift in Sources */,
-				FDC07C3B219AEEAD0028652C /* blueutilBridge.swift in Sources */,
-				FDC07C4D219B10AD0028652C /* ConnectWindow.swift in Sources */,
+				FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */,
+				FDF41928219DD94600A8E8E1 /* Connection.swift in Sources */,
+				FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */,
+				FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */,
+				FDF41927219DD94600A8E8E1 /* blueutilBridge.swift in Sources */,
+				FDF4191E219DD65A00A8E8E1 /* MainMenuController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDC07C19219AEE650028652C /* Sources */ = {
+		FDF4190A219DD5D700A8E8E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC07C22219AEE650028652C /* ConnectTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDC07C24219AEE650028652C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDC07C2D219AEE650028652C /* ConnectUITests.swift in Sources */,
+				FDF41913219DD5D700A8E8E1 /* wechselTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FDC07C1F219AEE650028652C /* PBXTargetDependency */ = {
+		FDF41910219DD5D700A8E8E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FDC07C0A219AEE630028652C /* Wechsel */;
-			targetProxy = FDC07C1E219AEE650028652C /* PBXContainerItemProxy */;
-		};
-		FDC07C2A219AEE650028652C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FDC07C0A219AEE630028652C /* Wechsel */;
-			targetProxy = FDC07C29219AEE650028652C /* PBXContainerItemProxy */;
+			target = FDF418FD219DD5D500A8E8E1 /* wechsel */;
+			targetProxy = FDF4190F219DD5D700A8E8E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FDC07C14219AEE650028652C /* Main.storyboard */ = {
+		FDF41905219DD5D700A8E8E1 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FDC07C15219AEE650028652C /* Base */,
+				FDF41906219DD5D700A8E8E1 /* Base */,
 			);
-			name = Main.storyboard;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FDC07C2F219AEE650028652C /* Debug */ = {
+		FDF41915219DD5D700A8E8E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -407,7 +331,7 @@
 			};
 			name = Debug;
 		};
-		FDC07C30219AEE650028652C /* Release */ = {
+		FDF41916219DD5D700A8E8E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -461,161 +385,111 @@
 			};
 			name = Release;
 		};
-		FDC07C32219AEE650028652C /* Debug */ = {
+		FDF41918219DD5D700A8E8E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Connect/Info.plist;
+				INFOPLIST_FILE = wechsel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.Wechsel;
+				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.wechsel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
-		FDC07C33219AEE650028652C /* Release */ = {
+		FDF41919219DD5D700A8E8E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = Connect/Info.plist;
+				INFOPLIST_FILE = wechsel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.Wechsel;
+				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.wechsel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
-		FDC07C35219AEE650028652C /* Debug */ = {
+		FDF4191B219DD5D700A8E8E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ConnectTests/Info.plist;
+				INFOPLIST_FILE = wechselTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.ConnectTests;
+				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.wechselTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wechsel.app/Contents/MacOS/Wechsel";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wechsel.app/Contents/MacOS/wechsel";
 			};
 			name = Debug;
 		};
-		FDC07C36219AEE650028652C /* Release */ = {
+		FDF4191C219DD5D700A8E8E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ConnectTests/Info.plist;
+				INFOPLIST_FILE = wechselTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.ConnectTests;
+				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.wechselTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wechsel.app/Contents/MacOS/Wechsel";
-			};
-			name = Release;
-		};
-		FDC07C38219AEE650028652C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ConnectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.ConnectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = Connect;
-			};
-			name = Debug;
-		};
-		FDC07C39219AEE650028652C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ConnectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.ConnectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = Connect;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wechsel.app/Contents/MacOS/wechsel";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FDC07C06219AEE630028652C /* Build configuration list for PBXProject "Wechsel" */ = {
+		FDF418F9219DD5D500A8E8E1 /* Build configuration list for PBXProject "wechsel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDC07C2F219AEE650028652C /* Debug */,
-				FDC07C30219AEE650028652C /* Release */,
+				FDF41915219DD5D700A8E8E1 /* Debug */,
+				FDF41916219DD5D700A8E8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDC07C31219AEE650028652C /* Build configuration list for PBXNativeTarget "Wechsel" */ = {
+		FDF41917219DD5D700A8E8E1 /* Build configuration list for PBXNativeTarget "wechsel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDC07C32219AEE650028652C /* Debug */,
-				FDC07C33219AEE650028652C /* Release */,
+				FDF41918219DD5D700A8E8E1 /* Debug */,
+				FDF41919219DD5D700A8E8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDC07C34219AEE650028652C /* Build configuration list for PBXNativeTarget "WechselTests" */ = {
+		FDF4191A219DD5D700A8E8E1 /* Build configuration list for PBXNativeTarget "wechselTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDC07C35219AEE650028652C /* Debug */,
-				FDC07C36219AEE650028652C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FDC07C37219AEE650028652C /* Build configuration list for PBXNativeTarget "WechselUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDC07C38219AEE650028652C /* Debug */,
-				FDC07C39219AEE650028652C /* Release */,
+				FDF4191B219DD5D700A8E8E1 /* Debug */,
+				FDF4191C219DD5D700A8E8E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FDC07C03219AEE630028652C /* Project object */;
+	rootObject = FDF418F6219DD5D500A8E8E1 /* Project object */;
 }
