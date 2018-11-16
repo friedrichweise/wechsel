@@ -16,4 +16,10 @@ class PreferenceViewController: NSViewController {
         super.viewDidLoad()
         shortcutView.associatedUserDefaultsKey = Config.key
     }
+    @IBAction func saveButtonClicked(_ sender: Any) {
+        if let window = self.view.window {
+            window.close()
+        }
+    }
+
 }

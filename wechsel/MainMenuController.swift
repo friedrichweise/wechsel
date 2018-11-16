@@ -31,6 +31,7 @@ class MainMenuController: NSObject {
         showModal()
     }
     @IBAction func settingsClicked(_ sender: Any) {
+        NSApp.activate(ignoringOtherApps: true)
         preferenceWindowController.showWindow(nil)
     }
     @IBAction func quitClicked(_ sender: Any) {
@@ -38,7 +39,6 @@ class MainMenuController: NSObject {
     }
     func showModal() {
         if let window = mainWindowController.window {
-            let application = NSApplication.shared
             NSApp.activate(ignoringOtherApps: true)
             window.makeKeyAndOrderFront(self)
             window.orderFrontRegardless()
