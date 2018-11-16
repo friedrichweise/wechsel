@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD401BDC219F0DC80047F462 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD401BDA219F0DC80047F462 /* PreferenceWindowController.swift */; };
+		FD401BDD219F0DC80047F462 /* PreferenceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD401BDB219F0DC80047F462 /* PreferenceWindowController.xib */; };
+		FD401BDF219F0EFE0047F462 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */; };
+		FD4CF5CA219F152400901936 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4CF5C9219F152400901936 /* Config.swift */; };
+		FD5CF88D219F122400F687A5 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5CF88C219F122400F687A5 /* MASShortcut.framework */; };
+		FD5CF88E219F122400F687A5 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD5CF88C219F122400F687A5 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */; };
 		FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF41903219DD5D700A8E8E1 /* Assets.xcassets */; };
 		FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF41905219DD5D700A8E8E1 /* MainMenu.xib */; };
@@ -30,7 +36,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FD5CF88F219F122400F687A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD5CF88E219F122400F687A5 /* MASShortcut.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FD401BD2219F07470047F462 /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		FD401BDA219F0DC80047F462 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
+		FD401BDB219F0DC80047F462 /* PreferenceWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferenceWindowController.xib; sourceTree = "<group>"; };
+		FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		FD401BE0219F11CE0047F462 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MASShortcut.framework; sourceTree = "<group>"; };
+		FD4CF5C9219F152400901936 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FD5CF88C219F122400F687A5 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Frameworks/MASShortcut.framework; sourceTree = "<group>"; };
 		FDF418FE219DD5D500A8E8E1 /* wechsel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechsel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF41903219DD5D700A8E8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD5CF88D219F122400F687A5 /* MASShortcut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,9 +95,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD4CF5C7219F149E00901936 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				FD401BDA219F0DC80047F462 /* PreferenceWindowController.swift */,
+				FD401BDB219F0DC80047F462 /* PreferenceWindowController.xib */,
+				FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		FD4CF5C8219F14AC00901936 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */,
+				FDF41920219DD81600A8E8E1 /* MainWindow.xib */,
+				FDF41923219DD93400A8E8E1 /* ViewController.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
 		FDF418F5219DD5D500A8E8E1 = {
 			isa = PBXGroup;
 			children = (
+				FD5CF88C219F122400F687A5 /* MASShortcut.framework */,
+				FD401BD2219F07470047F462 /* Bridging_Header.h */,
 				FDF41900219DD5D500A8E8E1 /* wechsel */,
 				FDF4192F219DDD1600A8E8E1 /* Frameworks */,
 				FDF41911219DD5D700A8E8E1 /* wechselTests */,
@@ -95,11 +145,11 @@
 				FDF41908219DD5D700A8E8E1 /* Info.plist */,
 				FDF41909219DD5D700A8E8E1 /* wechsel.entitlements */,
 				FDF4191D219DD65A00A8E8E1 /* MainMenuController.swift */,
-				FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */,
-				FDF41920219DD81600A8E8E1 /* MainWindow.xib */,
-				FDF41923219DD93400A8E8E1 /* ViewController.swift */,
+				FD4CF5C8219F14AC00901936 /* Modal */,
 				FDF41925219DD94600A8E8E1 /* blueutilBridge.swift */,
 				FDF41926219DD94600A8E8E1 /* Connection.swift */,
+				FD4CF5C7219F149E00901936 /* Preferences */,
+				FD4CF5C9219F152400901936 /* Config.swift */,
 			);
 			path = wechsel;
 			sourceTree = "<group>";
@@ -116,6 +166,7 @@
 		FDF4192F219DDD1600A8E8E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD401BE0219F11CE0047F462 /* MASShortcut.framework */,
 				FDF4192D219DDD0F00A8E8E1 /* blueutil */,
 			);
 			path = Frameworks;
@@ -131,6 +182,7 @@
 				FDF418FA219DD5D500A8E8E1 /* Sources */,
 				FDF418FB219DD5D500A8E8E1 /* Frameworks */,
 				FDF418FC219DD5D500A8E8E1 /* Resources */,
+				FD5CF88F219F122400F687A5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD401BDD219F0DC80047F462 /* PreferenceWindowController.xib in Resources */,
 				FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */,
 				FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */,
 				FDF4192E219DDD0F00A8E8E1 /* blueutil in Resources */,
@@ -232,11 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */,
+				FD401BDC219F0DC80047F462 /* PreferenceWindowController.swift in Sources */,
+				FD4CF5CA219F152400901936 /* Config.swift in Sources */,
 				FDF41928219DD94600A8E8E1 /* Connection.swift in Sources */,
 				FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */,
 				FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */,
 				FDF41927219DD94600A8E8E1 /* blueutilBridge.swift in Sources */,
 				FDF4191E219DD65A00A8E8E1 /* MainMenuController.swift in Sources */,
+				FD401BDF219F0EFE0047F462 /* PreferenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +447,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = wechsel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,6 +459,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.wechsel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridging_Header.h;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -408,6 +470,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = wechsel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,6 +482,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.wechsel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridging_Header.h;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
