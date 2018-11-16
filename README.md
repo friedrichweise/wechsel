@@ -13,5 +13,5 @@ open wechsel.xcodeproj
 ```
 
 ### Dependencies
-<a href="https://github.com/toy/blueutil">blueutil</a> v2.2.0
-<a href="https://github.com/shpakovski/MASShortcut">MASShortcut</a> v2.3.6
+* <a href="https://github.com/toy/blueutil">blueutil</a> v2.2.0
+* <a href="https://github.com/shpakovski/MASShortcut">MASShortcut</a> v2.3.6
