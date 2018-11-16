@@ -11,8 +11,9 @@
 		FD401BDD219F0DC80047F462 /* PreferenceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD401BDB219F0DC80047F462 /* PreferenceWindowController.xib */; };
 		FD401BDF219F0EFE0047F462 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */; };
 		FD4CF5CA219F152400901936 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4CF5C9219F152400901936 /* Config.swift */; };
-		FD5CF88D219F122400F687A5 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5CF88C219F122400F687A5 /* MASShortcut.framework */; };
-		FD5CF88E219F122400F687A5 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD5CF88C219F122400F687A5 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD4CF5CC219F1E3D00901936 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; };
+		FD4CF5CD219F1E5600901936 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; };
+		FD4CF5CE219F1E5600901936 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */; };
 		FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF41903219DD5D700A8E8E1 /* Assets.xcassets */; };
 		FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF41905219DD5D700A8E8E1 /* MainMenu.xib */; };
@@ -43,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FD5CF88E219F122400F687A5 /* MASShortcut.framework in Embed Frameworks */,
+				FD4CF5CE219F1E5600901936 /* MASShortcut.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,9 +56,8 @@
 		FD401BDA219F0DC80047F462 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 		FD401BDB219F0DC80047F462 /* PreferenceWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferenceWindowController.xib; sourceTree = "<group>"; };
 		FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
-		FD401BE0219F11CE0047F462 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MASShortcut.framework; sourceTree = "<group>"; };
 		FD4CF5C9219F152400901936 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		FD5CF88C219F122400F687A5 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Frameworks/MASShortcut.framework; sourceTree = "<group>"; };
+		FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = SOURCE_ROOT; };
 		FDF418FE219DD5D500A8E8E1 /* wechsel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechsel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF41903219DD5D700A8E8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,7 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD5CF88D219F122400F687A5 /* MASShortcut.framework in Frameworks */,
+				FD4CF5CD219F1E5600901936 /* MASShortcut.framework in Frameworks */,
+				FD4CF5CC219F1E3D00901936 /* MASShortcut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +119,6 @@
 		FDF418F5219DD5D500A8E8E1 = {
 			isa = PBXGroup;
 			children = (
-				FD5CF88C219F122400F687A5 /* MASShortcut.framework */,
 				FD401BD2219F07470047F462 /* Bridging_Header.h */,
 				FDF41900219DD5D500A8E8E1 /* wechsel */,
 				FDF4192F219DDD1600A8E8E1 /* Frameworks */,
@@ -166,7 +166,7 @@
 		FDF4192F219DDD1600A8E8E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD401BE0219F11CE0047F462 /* MASShortcut.framework */,
+				FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */,
 				FDF4192D219DDD0F00A8E8E1 /* blueutil */,
 			);
 			path = Frameworks;
