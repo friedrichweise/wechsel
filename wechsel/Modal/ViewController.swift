@@ -37,6 +37,7 @@ class ViewController: NSViewController {
             closeModal()
             connectToSelectedDevice()
         }
+        //escape
         if (event.keyCode == 53) {
             closeModal()
         }
@@ -50,7 +51,9 @@ class ViewController: NSViewController {
     }
     
     func closeModal() {
-        NSApplication.shared.stopModal()
+        if let window = self.view.window {
+            window.close()
+        }
     }
     
     override var representedObject: Any? {

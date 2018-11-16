@@ -41,8 +41,7 @@ class MainMenuController: NSObject {
             let application = NSApplication.shared
             NSApp.activate(ignoringOtherApps: true)
             window.makeKeyAndOrderFront(self)
-            application.runModal(for: window)
-            window.close()
+            window.orderFrontRegardless()
         }
     }
 
