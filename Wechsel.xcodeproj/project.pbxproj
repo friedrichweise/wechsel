@@ -28,8 +28,6 @@
 		FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */; };
 		FDF41922219DD81600A8E8E1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF41920219DD81600A8E8E1 /* MainWindow.xib */; };
 		FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41923219DD93400A8E8E1 /* ViewController.swift */; };
-		FDF41927219DD94600A8E8E1 /* blueutilBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41925219DD94600A8E8E1 /* blueutilBridge.swift */; };
-		FDF41928219DD94600A8E8E1 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41926219DD94600A8E8E1 /* Connection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +80,6 @@
 		FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		FDF41920219DD81600A8E8E1 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		FDF41923219DD93400A8E8E1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDF41925219DD94600A8E8E1 /* blueutilBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blueutilBridge.swift; sourceTree = "<group>"; };
-		FDF41926219DD94600A8E8E1 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +126,8 @@
 		FD4D6ED721A56AA7005DB70B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FD4D6ED321A432F7005DB70B /* Bluetooth.swift */,
+				FD4CF5C9219F152400901936 /* Config.swift */,
 				FD4D6ED821A56AB3005DB70B /* TimeAgo.swift */,
 			);
 			path = Helpers;
@@ -169,11 +167,7 @@
 				FDF41909219DD5D700A8E8E1 /* wechsel.entitlements */,
 				FDF4191D219DD65A00A8E8E1 /* MainMenuController.swift */,
 				FD4CF5C8219F14AC00901936 /* Modal */,
-				FDF41925219DD94600A8E8E1 /* blueutilBridge.swift */,
-				FDF41926219DD94600A8E8E1 /* Connection.swift */,
 				FD4CF5C7219F149E00901936 /* Preferences */,
-				FD4CF5C9219F152400901936 /* Config.swift */,
-				FD4D6ED321A432F7005DB70B /* Bluetooth.swift */,
 			);
 			path = wechsel;
 			sourceTree = "<group>";
@@ -335,11 +329,9 @@
 				FD4D6ED921A56AB3005DB70B /* TimeAgo.swift in Sources */,
 				FD401BDC219F0DC80047F462 /* PreferenceWindowController.swift in Sources */,
 				FD4CF5CA219F152400901936 /* Config.swift in Sources */,
-				FDF41928219DD94600A8E8E1 /* Connection.swift in Sources */,
 				FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */,
 				FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */,
 				FD4D6ED421A432F7005DB70B /* Bluetooth.swift in Sources */,
-				FDF41927219DD94600A8E8E1 /* blueutilBridge.swift in Sources */,
 				FDF4191E219DD65A00A8E8E1 /* MainMenuController.swift in Sources */,
 				FD401BDF219F0EFE0047F462 /* PreferenceViewController.swift in Sources */,
 			);

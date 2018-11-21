@@ -57,15 +57,6 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusDisabled" id="ejq-IO-0Kf"/>
                                                         </imageView>
-                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQF-aB-HV4">
-                                                            <rect key="frame" x="356" y="9" width="107" height="14"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Label" id="Zjo-ju-42G">
-                                                                <font key="font" metaFont="smallSystem"/>
-                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                            </textFieldCell>
-                                                        </textField>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k21-PJ-Ioy">
                                                             <rect key="frame" x="36" y="9" width="290" height="21"/>
                                                             <autoresizingMask key="autoresizingMask"/>
@@ -75,11 +66,25 @@
                                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
+                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQF-aB-HV4">
+                                                            <rect key="frame" x="356" y="9" width="107" height="14"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Label" id="Zjo-ju-42G">
+                                                                <font key="font" metaFont="smallSystem"/>
+                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                        <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="dfO-JY-pi1">
+                                                            <rect key="frame" x="8" y="12" width="16" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </progressIndicator>
                                                     </subviews>
                                                     <connections>
                                                         <outlet property="imgView" destination="5Ml-rZ-4wo" id="GRY-M4-aWk"/>
                                                         <outlet property="lastUsedTextField" destination="XQF-aB-HV4" id="xIe-bQ-hUc"/>
                                                         <outlet property="nameTextField" destination="k21-PJ-Ioy" id="HcR-zq-H6p"/>
+                                                        <outlet property="progressIndicator" destination="dfO-JY-pi1" id="gr5-yb-84T"/>
                                                     </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>

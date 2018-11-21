@@ -12,4 +12,22 @@ class DeviceTableCellView: NSTableCellView {
     @IBOutlet weak var imgView: NSImageView!
     @IBOutlet weak var nameTextField: NSTextField!
     @IBOutlet weak var lastUsedTextField: NSTextField!    
+    @IBOutlet weak var progressIndicator: NSProgressIndicator!
+
+    func setConnectionState(connnected: Bool) {
+        if connnected {
+            self.imgView.image = NSImage.init(named: "statusEnabled")
+        } else {
+            self.imgView.image = NSImage.init(named: "statusDisabled")
+        }
+    }
+    
+    func indicateProgress() {
+        self.imgView.isHidden = true
+        self.progressIndicator.startAnimation(nil)
+    }
+    func indicateState() {
+        self.progressIndicator.stopAnimation(nil)
+        self.imgView.isHidden  = false
+    }
 }
