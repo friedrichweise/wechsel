@@ -30,7 +30,6 @@
 		FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41923219DD93400A8E8E1 /* ViewController.swift */; };
 		FDF41927219DD94600A8E8E1 /* blueutilBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41925219DD94600A8E8E1 /* blueutilBridge.swift */; };
 		FDF41928219DD94600A8E8E1 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41926219DD94600A8E8E1 /* Connection.swift */; };
-		FDF4192E219DDD0F00A8E8E1 /* blueutil in Resources */ = {isa = PBXBuildFile; fileRef = FDF4192D219DDD0F00A8E8E1 /* blueutil */; settings = {ASSET_TAGS = (blueutil, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +84,6 @@
 		FDF41923219DD93400A8E8E1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDF41925219DD94600A8E8E1 /* blueutilBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = blueutilBridge.swift; sourceTree = "<group>"; };
 		FDF41926219DD94600A8E8E1 /* Connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
-		FDF4192D219DDD0F00A8E8E1 /* blueutil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = blueutil; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */,
-				FDF4192D219DDD0F00A8E8E1 /* blueutil */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -294,7 +291,6 @@
 				FD401BDD219F0DC80047F462 /* PreferenceWindowController.xib in Resources */,
 				FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */,
 				FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */,
-				FDF4192E219DDD0F00A8E8E1 /* blueutil in Resources */,
 				FD4D6EDF21A57170005DB70B /* README.md in Resources */,
 				FDF41922219DD81600A8E8E1 /* MainWindow.xib in Resources */,
 			);
