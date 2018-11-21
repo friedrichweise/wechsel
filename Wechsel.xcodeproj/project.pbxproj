@@ -14,6 +14,12 @@
 		FD4CF5CC219F1E3D00901936 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; };
 		FD4CF5CD219F1E5600901936 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; };
 		FD4CF5CE219F1E5600901936 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD4D6ED421A432F7005DB70B /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6ED321A432F7005DB70B /* Bluetooth.swift */; };
+		FD4D6ED621A565C1005DB70B /* DeviceTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6ED521A565C1005DB70B /* DeviceTableCellView.swift */; };
+		FD4D6ED921A56AB3005DB70B /* TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6ED821A56AB3005DB70B /* TimeAgo.swift */; };
+		FD4D6EDD21A57170005DB70B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDA21A5716F005DB70B /* Cartfile */; };
+		FD4D6EDE21A57170005DB70B /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */; };
+		FD4D6EDF21A57170005DB70B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDC21A5716F005DB70B /* README.md */; };
 		FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */; };
 		FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF41903219DD5D700A8E8E1 /* Assets.xcassets */; };
 		FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF41905219DD5D700A8E8E1 /* MainMenu.xib */; };
@@ -58,6 +64,12 @@
 		FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		FD4CF5C9219F152400901936 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = SOURCE_ROOT; };
+		FD4D6ED321A432F7005DB70B /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		FD4D6ED521A565C1005DB70B /* DeviceTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableCellView.swift; sourceTree = "<group>"; };
+		FD4D6ED821A56AB3005DB70B /* TimeAgo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAgo.swift; sourceTree = "<group>"; };
+		FD4D6EDA21A5716F005DB70B /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		FD4D6EDC21A5716F005DB70B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FDF418FE219DD5D500A8E8E1 /* wechsel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechsel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF41903219DD5D700A8E8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,13 +124,25 @@
 				FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */,
 				FDF41920219DD81600A8E8E1 /* MainWindow.xib */,
 				FDF41923219DD93400A8E8E1 /* ViewController.swift */,
+				FD4D6ED521A565C1005DB70B /* DeviceTableCellView.swift */,
 			);
 			path = Modal;
+			sourceTree = "<group>";
+		};
+		FD4D6ED721A56AA7005DB70B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD4D6ED821A56AB3005DB70B /* TimeAgo.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FDF418F5219DD5D500A8E8E1 = {
 			isa = PBXGroup;
 			children = (
+				FD4D6EDA21A5716F005DB70B /* Cartfile */,
+				FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */,
+				FD4D6EDC21A5716F005DB70B /* README.md */,
 				FD401BD2219F07470047F462 /* Bridging_Header.h */,
 				FDF41900219DD5D500A8E8E1 /* wechsel */,
 				FDF4192F219DDD1600A8E8E1 /* Frameworks */,
@@ -139,6 +163,7 @@
 		FDF41900219DD5D500A8E8E1 /* wechsel */ = {
 			isa = PBXGroup;
 			children = (
+				FD4D6ED721A56AA7005DB70B /* Helpers */,
 				FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */,
 				FDF41903219DD5D700A8E8E1 /* Assets.xcassets */,
 				FDF41905219DD5D700A8E8E1 /* MainMenu.xib */,
@@ -150,6 +175,7 @@
 				FDF41926219DD94600A8E8E1 /* Connection.swift */,
 				FD4CF5C7219F149E00901936 /* Preferences */,
 				FD4CF5C9219F152400901936 /* Config.swift */,
+				FD4D6ED321A432F7005DB70B /* Bluetooth.swift */,
 			);
 			path = wechsel;
 			sourceTree = "<group>";
@@ -183,6 +209,7 @@
 				FDF418FB219DD5D500A8E8E1 /* Frameworks */,
 				FDF418FC219DD5D500A8E8E1 /* Resources */,
 				FD5CF88F219F122400F687A5 /* Embed Frameworks */,
+				FD398537219F305700BBFB3C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -228,7 +255,7 @@
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -262,10 +289,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4D6EDD21A57170005DB70B /* Cartfile in Resources */,
+				FD4D6EDE21A57170005DB70B /* Cartfile.resolved in Resources */,
 				FD401BDD219F0DC80047F462 /* PreferenceWindowController.xib in Resources */,
 				FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */,
 				FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */,
 				FDF4192E219DDD0F00A8E8E1 /* blueutil in Resources */,
+				FD4D6EDF21A57170005DB70B /* README.md in Resources */,
 				FDF41922219DD81600A8E8E1 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,17 +309,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FD398537219F305700BBFB3C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "./Carthage/Build/Mac/LaunchAtLogin.framework/Resources/copy-helper.sh\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDF418FA219DD5D500A8E8E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */,
+				FD4D6ED621A565C1005DB70B /* DeviceTableCellView.swift in Sources */,
+				FD4D6ED921A56AB3005DB70B /* TimeAgo.swift in Sources */,
 				FD401BDC219F0DC80047F462 /* PreferenceWindowController.swift in Sources */,
 				FD4CF5CA219F152400901936 /* Config.swift in Sources */,
 				FDF41928219DD94600A8E8E1 /* Connection.swift in Sources */,
 				FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */,
 				FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */,
+				FD4D6ED421A432F7005DB70B /* Bluetooth.swift in Sources */,
 				FDF41927219DD94600A8E8E1 /* blueutilBridge.swift in Sources */,
 				FDF4191E219DD65A00A8E8E1 /* MainMenuController.swift in Sources */,
 				FD401BDF219F0EFE0047F462 /* PreferenceViewController.swift in Sources */,
@@ -445,8 +498,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = wechsel/wechsel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M7WS23A7ZJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -468,8 +523,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = wechsel/wechsel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = M7WS23A7ZJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
