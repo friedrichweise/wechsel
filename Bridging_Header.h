@@ -13,4 +13,9 @@
 #import <MASShortcut/Shortcut.h>
 
 
+#import    <IOBluetooth/Bluetooth.h>
+
+void IOBluetoothPreferenceSetControllerPowerState(int);
+int IOBluetoothPreferenceGetControllerPowerState();
+
 #endif /* Bridging_Header_h */

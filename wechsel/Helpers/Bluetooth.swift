@@ -51,4 +51,9 @@ class Bluetooth {
         }
     }
     
+    func getBluetoothPowerState() -> Bool {
+        let powerState = IOBluetoothPreferenceGetControllerPowerState()
+        return powerState == 0 ? false : true
+    }
+    
 }

@@ -16,7 +16,7 @@
             <windowStyleMask key="styleMask" titled="YES" nonactivatingPanel="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="900"/>
             <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -86,6 +86,30 @@
                                                         <outlet property="nameTextField" destination="k21-PJ-Ioy" id="HcR-zq-H6p"/>
                                                         <outlet property="progressIndicator" destination="dfO-JY-pi1" id="gr5-yb-84T"/>
                                                     </connections>
+                                                </tableCellView>
+                                                <tableCellView identifier="bluetoothRow" id="ffo-2V-Vu9" customClass="BluetoothTableView" customModule="wechsel" customModuleProvider="target">
+                                                    <rect key="frame" x="1" y="43" width="477" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAX-0F-xDj">
+                                                            <rect key="frame" x="10" y="14" width="12" height="12"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusDisabled" id="QlO-n1-SBt"/>
+                                                        </imageView>
+                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-oH-Az9">
+                                                            <rect key="frame" x="36" y="9" width="290" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="System Bluetooth" id="0BF-ML-Fzo">
+                                                                <font key="font" metaFont="systemSemibold" size="16"/>
+                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                        <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="V24-zb-ToC">
+                                                            <rect key="frame" x="8" y="12" width="16" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        </progressIndicator>
+                                                    </subviews>
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>

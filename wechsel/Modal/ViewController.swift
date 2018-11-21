@@ -18,13 +18,13 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
         tableView.target = self
         tableView.doubleAction = #selector(tableViewDoubleClick(_:))
     }
     /* modal window gets shown */
     override func viewWillAppear() {
         super.viewWillAppear()
+        tableView.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
         reloadTableView()
     }
     
@@ -80,11 +80,9 @@ class ViewController: NSViewController {
 }
 
 extension ViewController: NSTableViewDataSource {
-    
     func numberOfRows(in tableView: NSTableView) -> Int {
         return Config.numberOfDevices
     }
-    
 }
 
 extension ViewController: NSTableViewDelegate {
