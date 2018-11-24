@@ -56,4 +56,9 @@ class Bluetooth {
         return powerState == 0 ? false : true
     }
     
+    func setBluetoothPowerState(state: Bool)  {
+        let powerState: Int32 = state ? Int32(1) : Int32(0)
+        IOBluetoothPreferenceSetControllerPowerState(powerState)
+    }
+    
 }

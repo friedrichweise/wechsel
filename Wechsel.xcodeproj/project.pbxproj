@@ -20,7 +20,7 @@
 		FD4D6EDD21A57170005DB70B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDA21A5716F005DB70B /* Cartfile */; };
 		FD4D6EDE21A57170005DB70B /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */; };
 		FD4D6EDF21A57170005DB70B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDC21A5716F005DB70B /* README.md */; };
-		FD4D6EE121A586D6005DB70B /* BluetoothTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6EE021A586D6005DB70B /* BluetoothTableView.swift */; };
+		FD4D6EE121A586D6005DB70B /* BluetoothTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6EE021A586D6005DB70B /* BluetoothTableCellView.swift */; };
 		FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */; };
 		FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF41903219DD5D700A8E8E1 /* Assets.xcassets */; };
 		FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF41905219DD5D700A8E8E1 /* MainMenu.xib */; };
@@ -68,7 +68,7 @@
 		FD4D6EDA21A5716F005DB70B /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		FD4D6EDC21A5716F005DB70B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FD4D6EE021A586D6005DB70B /* BluetoothTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTableView.swift; sourceTree = "<group>"; };
+		FD4D6EE021A586D6005DB70B /* BluetoothTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTableCellView.swift; sourceTree = "<group>"; };
 		FDF418FE219DD5D500A8E8E1 /* wechsel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechsel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF41903219DD5D700A8E8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				FDF41920219DD81600A8E8E1 /* MainWindow.xib */,
 				FDF41923219DD93400A8E8E1 /* ViewController.swift */,
 				FD4D6ED521A565C1005DB70B /* DeviceTableCellView.swift */,
-				FD4D6EE021A586D6005DB70B /* BluetoothTableView.swift */,
+				FD4D6EE021A586D6005DB70B /* BluetoothTableCellView.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -331,7 +331,7 @@
 				FD4D6ED621A565C1005DB70B /* DeviceTableCellView.swift in Sources */,
 				FD4D6ED921A56AB3005DB70B /* TimeAgo.swift in Sources */,
 				FD401BDC219F0DC80047F462 /* PreferenceWindowController.swift in Sources */,
-				FD4D6EE121A586D6005DB70B /* BluetoothTableView.swift in Sources */,
+				FD4D6EE121A586D6005DB70B /* BluetoothTableCellView.swift in Sources */,
 				FD4CF5CA219F152400901936 /* Config.swift in Sources */,
 				FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */,
 				FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */,
@@ -504,6 +504,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.wechsel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Bridging_Header.h;
@@ -529,6 +530,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = friedrich.weise.wechsel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Bridging_Header.h;

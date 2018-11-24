@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class BluetoothTableView: NSTableCellView {
+class BluetoothTableCellView: NSTableCellView {
 
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
