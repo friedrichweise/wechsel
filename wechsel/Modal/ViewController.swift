@@ -8,22 +8,35 @@
 
 import Cocoa
 
+enum ModalState {
+    case ConnectionMode
+    case BluetoothMode
+}
+
+
 class ViewController: NSViewController {
     
     @IBOutlet var tableView: NSTableView!
 
     var bluetooth: Bluetooth = Bluetooth(numberOfDevices: Config.numberOfDevices)
-    
+    var state: ModalState = ModalState.ConnectionMode
     /* initalize view */
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.target = self
         tableView.doubleAction = #selector(tableViewDoubleClick(_:))
     }
     /* modal window gets shown */
     override func viewWillAppear() {
         super.viewWillAppear()
+        
+        if self.bluetooth.getBluetoothPowerState() == false {
+            self.state = ModalState.BluetoothMode
+        } else {
+            self.state = ModalState.ConnectionMode
+        }
+        
         tableView.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
         reloadTableView()
     }
@@ -88,12 +101,21 @@ extension ViewController: NSTableViewDataSource {
 extension ViewController: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
-        return true;
+        if self.state == ModalState.BluetoothMode && row != 0 {
+            return false
+        } else {
+            return true;
+        }
     }
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView?{
-        let deviceView:DeviceTableCellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "defaultRow"), owner: self) as! DeviceTableCellView
         
+        if row == 0 && self.state == ModalState.BluetoothMode {
+            return tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "bluetoothRow"), owner: self) as! BluetoothTableCellView
+        }
+        
+        var deviceView:DeviceTableCellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "defaultRow"), owner: self) as! DeviceTableCellView
+
         let bluetoothDevices = self.bluetooth.getDevices()
         
         guard bluetoothDevices.indices.contains(row),
