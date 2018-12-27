@@ -49,68 +49,64 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
-                                                <tableCellView identifier="defaultRow" id="tPK-KG-1ZC" customClass="DeviceTableCellView" customModule="wechsel" customModuleProvider="target">
+                                                <tableCellView identifier="bluetoothRow" id="qZ5-1P-vz0" customClass="BluetoothTableCellView" customModule="wechsel" customModuleProvider="target">
                                                     <rect key="frame" x="1" y="1" width="477" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ml-rZ-4wo">
+                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgu-t4-wyP">
                                                             <rect key="frame" x="10" y="14" width="12" height="12"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusDisabled" id="ejq-IO-0Kf"/>
+                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusDisabled" id="OaB-cv-FWe"/>
                                                         </imageView>
-                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k21-PJ-Ioy">
-                                                            <rect key="frame" x="36" y="9" width="290" height="21"/>
+                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bi4-N0-Qmn">
+                                                            <rect key="frame" x="36" y="9" width="427" height="21"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="etr-6R-W29">
-                                                                <font key="font" metaFont="system" size="16"/>
-                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                            </textFieldCell>
-                                                        </textField>
-                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQF-aB-HV4">
-                                                            <rect key="frame" x="356" y="9" width="107" height="14"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Label" id="Zjo-ju-42G">
-                                                                <font key="font" metaFont="smallSystem"/>
-                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                            </textFieldCell>
-                                                        </textField>
-                                                        <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="dfO-JY-pi1">
-                                                            <rect key="frame" x="8" y="12" width="16" height="16"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                        </progressIndicator>
-                                                    </subviews>
-                                                    <connections>
-                                                        <outlet property="imgView" destination="5Ml-rZ-4wo" id="GRY-M4-aWk"/>
-                                                        <outlet property="lastUsedTextField" destination="XQF-aB-HV4" id="xIe-bQ-hUc"/>
-                                                        <outlet property="nameTextField" destination="k21-PJ-Ioy" id="HcR-zq-H6p"/>
-                                                        <outlet property="progressIndicator" destination="dfO-JY-pi1" id="gr5-yb-84T"/>
-                                                    </connections>
-                                                </tableCellView>
-                                                <tableCellView identifier="bluetoothRow" id="ffo-2V-Vu9" customClass="BluetoothTableCellView" customModule="wechsel" customModuleProvider="target">
-                                                    <rect key="frame" x="1" y="43" width="477" height="40"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                    <subviews>
-                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAX-0F-xDj">
-                                                            <rect key="frame" x="10" y="14" width="12" height="12"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusDisabled" id="QlO-n1-SBt"/>
-                                                        </imageView>
-                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-oH-Az9">
-                                                            <rect key="frame" x="36" y="9" width="290" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="System Bluetooth" id="0BF-ML-Fzo">
+                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Enable Bluetooth to connect to device" id="stL-Ij-BaL">
                                                                 <font key="font" metaFont="systemSemibold" size="16"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
-                                                        <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="V24-zb-ToC">
+                                                    </subviews>
+                                                </tableCellView>
+                                                <tableCellView identifier="deviceRow" id="lyV-et-DT6" customClass="DeviceTableCellView" customModule="wechsel" customModuleProvider="target">
+                                                    <rect key="frame" x="1" y="43" width="477" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqK-0P-Ig7">
+                                                            <rect key="frame" x="10" y="14" width="12" height="12"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusInactive" id="Xxf-I8-o9u"/>
+                                                        </imageView>
+                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-c4-Ucg">
+                                                            <rect key="frame" x="36" y="9" width="290" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="S8e-YN-9wj">
+                                                                <font key="font" metaFont="system" size="16"/>
+                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dG3-Pm-ZGN">
+                                                            <rect key="frame" x="356" y="9" width="107" height="14"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Label" id="HMf-Ap-STb">
+                                                                <font key="font" metaFont="smallSystem"/>
+                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                        <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="dem-qj-v8a">
                                                             <rect key="frame" x="8" y="12" width="16" height="16"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                         </progressIndicator>
                                                     </subviews>
+                                                    <connections>
+                                                        <outlet property="imgView" destination="pqK-0P-Ig7" id="bLZ-ae-c8K"/>
+                                                        <outlet property="lastUsedTextField" destination="dG3-Pm-ZGN" id="3gM-ee-cdL"/>
+                                                        <outlet property="nameTextField" destination="TgL-c4-Ucg" id="kwd-s5-ty3"/>
+                                                        <outlet property="progressIndicator" destination="dem-qj-v8a" id="AGE-q6-bNo"/>
+                                                    </connections>
                                                 </tableCellView>
                                             </prototypeCellViews>
                                         </tableColumn>
@@ -146,5 +142,6 @@
     </objects>
     <resources>
         <image name="statusDisabled" width="100" height="100"/>
+        <image name="statusInactive" width="100" height="100"/>
     </resources>
 </document>

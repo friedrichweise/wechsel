@@ -56,9 +56,19 @@ class Bluetooth {
         return powerState == 0 ? false : true
     }
     
+    /*
+     * inspired by blueutil by @toy (https://github.com/toy/blueutil/blob/master/blueutil.m)
+     */
     func setBluetoothPowerState(state: Bool)  {
         let powerState: Int32 = state ? Int32(1) : Int32(0)
         IOBluetoothPreferenceSetControllerPowerState(powerState)
+        for i in 0 ... 100 {
+            if i != 0 {
+                usleep(100000)
+            }
+            if state == getBluetoothPowerState() {
+                return
+            }
+        }
     }
-    
 }

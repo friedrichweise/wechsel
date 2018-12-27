@@ -31,12 +31,6 @@ class ViewController: NSViewController {
     override func viewWillAppear() {
         super.viewWillAppear()
         
-        if self.bluetooth.getBluetoothPowerState() == false {
-            self.state = ModalState.BluetoothMode
-        } else {
-            self.state = ModalState.ConnectionMode
-        }
-        
         tableView.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
         reloadTableView()
     }
@@ -59,28 +53,41 @@ class ViewController: NSViewController {
         guard tableView.selectedRow >= 0 else {
                 return
         }
-        let device = self.bluetooth.getDevices()[tableView.selectedRow]
-        let deviceCellView = tableView.view(atColumn: 0, row: tableView.selectedRow, makeIfNecessary: false) as! DeviceTableCellView
-        deviceCellView.indicateProgress()
-
-        let finishedHandler = {(success: Bool) -> Void in
+        
+        let selectedCell = tableView.view(atColumn: 0, row: tableView.selectedRow, makeIfNecessary: false)
+        if let bluetoothCell = selectedCell as? BluetoothTableCellView {
+            self.bluetooth.setBluetoothPowerState(state: true)
             self.reloadTableView()
-            //hides the progress indicator and draws state image
-            deviceCellView.indicateState()
-            if success {
-                self.perform(#selector(self.closeModal), with: nil, afterDelay: 1)
+        }
+        if let deviceCellView = selectedCell as? DeviceTableCellView {
+            let device = self.bluetooth.getDevices()[tableView.selectedRow]
+            deviceCellView.indicateProgress()
+            let finishedHandler = {(success: Bool) -> Void in
+                self.reloadTableView()
+                //hides the progress indicator and draws state image
+                deviceCellView.indicateState()
+                if success {
+                    self.perform(#selector(self.closeModal), with: nil, afterDelay: 1)
+                }
+            }
+            
+            if device.isConnected() {
+                self.bluetooth.disconnectFromDevice(device: device, finished: finishedHandler)
+            } else {
+                self.bluetooth.connectToDevices(device: device, finished: finishedHandler)
             }
         }
-        
-        if device.isConnected() {
-            self.bluetooth.disconnectFromDevice(device: device, finished: finishedHandler)
-        } else {
-            self.bluetooth.connectToDevices(device: device, finished: finishedHandler)
-        }
-        
     }
     func reloadTableView() {
+        //preserve selection state
         let row = tableView.selectedRow
+        
+        if self.bluetooth.getBluetoothPowerState() == false {
+            self.state = ModalState.BluetoothMode
+        } else {
+            self.state = ModalState.ConnectionMode
+        }
+        
         tableView.reloadData()
         tableView.selectRowIndexes(IndexSet(integer: row), byExtendingSelection: false)
     }
@@ -110,12 +117,12 @@ extension ViewController: NSTableViewDelegate {
     
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView?{
         
+        // create Bluetooth Cell View
         if row == 0 && self.state == ModalState.BluetoothMode {
             return tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "bluetoothRow"), owner: self) as! BluetoothTableCellView
         }
         
-        var deviceView:DeviceTableCellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "defaultRow"), owner: self) as! DeviceTableCellView
-
+        let deviceView:DeviceTableCellView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "deviceRow"), owner: self) as! DeviceTableCellView
         let bluetoothDevices = self.bluetooth.getDevices()
         
         guard bluetoothDevices.indices.contains(row),
@@ -128,6 +135,10 @@ extension ViewController: NSTableViewDelegate {
         deviceView.lastUsedTextField.stringValue = timeAgoSince(recentAccess)
         deviceView.setConnectionState(connnected: bluetoothDevices[row].isConnected())
 
+        if self.state == ModalState.BluetoothMode {
+            deviceView.disabled()
+        }
+        
         return deviceView
     }
     
