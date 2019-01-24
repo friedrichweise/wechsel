@@ -8,5 +8,5 @@
 
 struct Config {
     static let key = "GlobalHotkey"
-    static let numberOfDevices = 10
+    static let numberOfDevices = 15
 }
