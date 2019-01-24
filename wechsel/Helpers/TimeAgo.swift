@@ -1,10 +1,3 @@
-//
-//  TimeAgo.swift
-//  wechsel
-//
-//  Created by Friedrich Weise on 21.11.18.
-//  Copyright © 2018 Friedrich Weise. All rights reserved.
-//
 //from https://github.com/zemirco/swift-timeago
 
 import Foundation
