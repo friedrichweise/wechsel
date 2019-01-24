@@ -203,7 +203,6 @@
 				FDF418FB219DD5D500A8E8E1 /* Frameworks */,
 				FDF418FC219DD5D500A8E8E1 /* Resources */,
 				FD5CF88F219F122400F687A5 /* Embed Frameworks */,
-				FD398537219F305700BBFB3C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -301,26 +300,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		FD398537219F305700BBFB3C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "./Carthage/Build/Mac/LaunchAtLogin.framework/Resources/copy-helper.sh\n";
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDF418FA219DD5D500A8E8E1 /* Sources */ = {
