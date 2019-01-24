@@ -1,8 +1,8 @@
 //
-//  BluetoothTableView.swift
+//  BluetoothTableCellView.swift
 //  wechsel
 //
-//  Created by Friedrich Weise on 21.11.18.
+//  Created by Friedrich Weise on 29.11.18.
 //  Copyright © 2018 Friedrich Weise. All rights reserved.
 //
 

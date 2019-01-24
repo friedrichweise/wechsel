@@ -15,12 +15,12 @@
 		FD4CF5CD219F1E5600901936 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; };
 		FD4CF5CE219F1E5600901936 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD4D6ED421A432F7005DB70B /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6ED321A432F7005DB70B /* Bluetooth.swift */; };
-		FD4D6ED621A565C1005DB70B /* DeviceTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6ED521A565C1005DB70B /* DeviceTableCellView.swift */; };
 		FD4D6ED921A56AB3005DB70B /* TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6ED821A56AB3005DB70B /* TimeAgo.swift */; };
 		FD4D6EDD21A57170005DB70B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDA21A5716F005DB70B /* Cartfile */; };
 		FD4D6EDE21A57170005DB70B /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */; };
 		FD4D6EDF21A57170005DB70B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDC21A5716F005DB70B /* README.md */; };
-		FD4D6EE121A586D6005DB70B /* BluetoothTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6EE021A586D6005DB70B /* BluetoothTableCellView.swift */; };
+		FDD7A71E21B0125F00130122 /* DeviceTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD7A71D21B0125F00130122 /* DeviceTableCellView.swift */; };
+		FDD7A72021B0126B00130122 /* BluetoothTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD7A71F21B0126B00130122 /* BluetoothTableCellView.swift */; };
 		FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */; };
 		FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF41903219DD5D700A8E8E1 /* Assets.xcassets */; };
 		FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF41905219DD5D700A8E8E1 /* MainMenu.xib */; };
@@ -63,12 +63,12 @@
 		FD4CF5C9219F152400901936 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = SOURCE_ROOT; };
 		FD4D6ED321A432F7005DB70B /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
-		FD4D6ED521A565C1005DB70B /* DeviceTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableCellView.swift; sourceTree = "<group>"; };
 		FD4D6ED821A56AB3005DB70B /* TimeAgo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAgo.swift; sourceTree = "<group>"; };
 		FD4D6EDA21A5716F005DB70B /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		FD4D6EDC21A5716F005DB70B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FD4D6EE021A586D6005DB70B /* BluetoothTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTableCellView.swift; sourceTree = "<group>"; };
+		FDD7A71D21B0125F00130122 /* DeviceTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableCellView.swift; sourceTree = "<group>"; };
+		FDD7A71F21B0126B00130122 /* BluetoothTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTableCellView.swift; sourceTree = "<group>"; };
 		FDF418FE219DD5D500A8E8E1 /* wechsel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechsel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDF41903219DD5D700A8E8E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,11 +117,11 @@
 		FD4CF5C8219F14AC00901936 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
-				FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */,
 				FDF41920219DD81600A8E8E1 /* MainWindow.xib */,
+				FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */,
 				FDF41923219DD93400A8E8E1 /* ViewController.swift */,
-				FD4D6ED521A565C1005DB70B /* DeviceTableCellView.swift */,
-				FD4D6EE021A586D6005DB70B /* BluetoothTableCellView.swift */,
+				FDD7A71D21B0125F00130122 /* DeviceTableCellView.swift */,
+				FDD7A71F21B0126B00130122 /* BluetoothTableCellView.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -306,11 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD7A72021B0126B00130122 /* BluetoothTableCellView.swift in Sources */,
 				FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */,
-				FD4D6ED621A565C1005DB70B /* DeviceTableCellView.swift in Sources */,
+				FDD7A71E21B0125F00130122 /* DeviceTableCellView.swift in Sources */,
 				FD4D6ED921A56AB3005DB70B /* TimeAgo.swift in Sources */,
 				FD401BDC219F0DC80047F462 /* PreferenceWindowController.swift in Sources */,
-				FD4D6EE121A586D6005DB70B /* BluetoothTableCellView.swift in Sources */,
 				FD4CF5CA219F152400901936 /* Config.swift in Sources */,
 				FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */,
 				FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */,
