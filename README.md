@@ -1,6 +1,6 @@
 #  wechsel
 
-wechsel (`/ˈvɛksəl/`) claims to simplify the interaction with  bluetooth connections on macOS. Instead of using the builtin Bluetooth menu bar you can seamlessly switch between bluetooth devices using solely your keyboard. The tool offers a global hotkey to display a Spotlight-like window. I seeks to be a more generic solution than the similar tool <a href="https://c-command.com/toothfairy/">ToothFairy</a>.
+wechsel (`/ˈvɛksəl/`) claims to simplify the interaction with  bluetooth connections on macOS. Instead of using the builtin Bluetooth menu bar you can seamlessly switch between bluetooth devices solely using your keyboard. The tool offers a global hotkey to display a Spotlight-like window. I seeks to be a more generic solution than the similar tool <a href="https://c-command.com/toothfairy/">ToothFairy</a>.
 The implementation is based on the work of  <a href="https://github.com/toy/blueutil">blueutil</a> and utilizes the system level <a href="https://developer.apple.com/documentation/iobluetooth">IOBluetooth</a> framework.
 
 <img src="screenshot.png" width="100%" alt="Screenshot"/>
