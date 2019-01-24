@@ -18,8 +18,9 @@ class MainMenuController: NSObject {
 
     override func awakeFromNib() {
         statusItem.menu = mainMenu
-        statusItem.title = "wechsel"
-        
+        if let button = statusItem.button {
+            button.image = NSImage(named:NSImage.Name("StatusBarIcon"))
+        }
         mainWindowController = MainWindowController()
         preferenceWindowController = PreferenceWindowController()
         
