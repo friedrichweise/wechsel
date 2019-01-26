@@ -8,8 +8,9 @@ The implementation is based on the work of  <a href="https://github.com/toy/blue
 ### Current Development Status
 - [x] basic connection handling
 - [x] global hotkey
+- [x] enable/disable Bluetooth
 - [ ] autostart (<a href="https://github.com/sindresorhus/LaunchAtLogin">LaunchAtLogin</a>)
-- [ ] enable/disable Bluetooth
+
 
 More details in the <a href="https://github.com/friedrichweise/wechsel/issues">issues</a> of this repository.
 
