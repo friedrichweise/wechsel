@@ -23,7 +23,18 @@ class Bluetooth {
             print("Error accessing IOBluetoothDevice.recentDevices")
             return []
         }
-        return devices
+        //sort device array by connection state
+        let sortedDevices = devices.sorted(by: {
+            if $0.isConnected() && $1.isConnected() {
+              return $0.recentAccessDate() > $1.recentAccessDate()
+            } else if $0.isConnected() {
+              return true
+            } else {
+              return false
+            }
+        })
+
+        return sortedDevices
     }
     func refreshDeviceList() {
         self.devices = self.fetchDevices()
@@ -33,26 +44,22 @@ class Bluetooth {
         return self.devices
     }
     
-    //@todo: remove code duplication
-    func connectToDevices(device: IOBluetoothDevice, finished: @escaping (Bool) -> Void) {
+    func modifyConnection(device: IOBluetoothDevice, desiredState: Bool, finished: @escaping (Bool) -> Void) {
         DispatchQueue.global(qos: .background).async {
-            let result = device.openConnection()
+            var result = Int32()
+            if desiredState == false {
+                result = device.closeConnection()
+            }
+            else if desiredState == true {
+                result = device.openConnection()
+            }
             DispatchQueue.main.async {
                 finished(self.evaulateIOReturn(returnValue: result))
             }
         }
     }
     
-    func disconnectFromDevice(device: IOBluetoothDevice, finished: @escaping (Bool) -> Void) {
-        DispatchQueue.global(qos: .background).async {
-            let result = device.closeConnection()
-            DispatchQueue.main.async {
-                finished(self.evaulateIOReturn(returnValue: result))
-            }
-        }
-    }
-    
-    func evaulateIOReturn(returnValue: IOReturn) -> Bool {
+    private func evaulateIOReturn(returnValue: IOReturn) -> Bool {
         if returnValue != 0 {
             return false
         } else {

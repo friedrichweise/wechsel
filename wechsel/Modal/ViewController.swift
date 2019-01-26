@@ -62,18 +62,18 @@ class ViewController: NSViewController {
             let device = self.bluetooth.getDevices()[tableView.selectedRow]
             deviceCellView.indicateProgress()
             let finishedHandler = {(success: Bool) -> Void in
-                self.reloadTableView()
                 //hides the progress indicator and draws state image
                 deviceCellView.indicateState()
                 if success {
-                    self.perform(#selector(self.closeModal), with: nil, afterDelay: 1)
+                    self.perform(#selector(self.closeModal), with: nil, afterDelay: 0)
+                    self.reloadTableView()
                 }
             }
             
             if device.isConnected() {
-                self.bluetooth.disconnectFromDevice(device: device, finished: finishedHandler)
+                self.bluetooth.modifyConnection(device: device, desiredState: false, finished: finishedHandler)
             } else {
-                self.bluetooth.connectToDevices(device: device, finished: finishedHandler)
+                self.bluetooth.modifyConnection(device: device, desiredState: true, finished: finishedHandler)
             }
         }
     }
