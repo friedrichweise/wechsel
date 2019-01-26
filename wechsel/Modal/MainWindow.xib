@@ -17,7 +17,7 @@
             <windowStyleMask key="styleMask" titled="YES" nonactivatingPanel="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
             <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -53,20 +53,29 @@
                                                     <rect key="frame" x="1" y="1" width="477" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgu-t4-wyP">
-                                                            <rect key="frame" x="10" y="14" width="12" height="12"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusDisabled" id="OaB-cv-FWe"/>
-                                                        </imageView>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bi4-N0-Qmn">
-                                                            <rect key="frame" x="36" y="9" width="427" height="21"/>
+                                                            <rect key="frame" x="36" y="9" width="299" height="21"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Enable Bluetooth to connect to device" id="stL-Ij-BaL">
+                                                            <textFieldCell key="cell" lineBreakMode="clipping" title="Bluetooth is disabled" id="stL-Ij-BaL">
                                                                 <font key="font" metaFont="systemSemibold" size="16"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                         </textField>
+                                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cf5-on-BiJ">
+                                                            <rect key="frame" x="362" y="10" width="102" height="14"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Press ↵ " id="0eq-Ji-Cb7">
+                                                                <font key="font" metaFont="smallSystem"/>
+                                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgu-t4-wyP">
+                                                            <rect key="frame" x="7" y="12" width="18" height="18"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="bluetoothDisabled" id="OaB-cv-FWe"/>
+                                                        </imageView>
                                                     </subviews>
                                                 </tableCellView>
                                                 <tableCellView identifier="deviceRow" id="lyV-et-DT6" customClass="DeviceTableCellView" customModule="wechsel" customModuleProvider="target">
@@ -141,7 +150,7 @@
         </viewController>
     </objects>
     <resources>
-        <image name="statusDisabled" width="100" height="100"/>
+        <image name="bluetoothDisabled" width="100" height="100"/>
         <image name="statusInactive" width="100" height="100"/>
     </resources>
 </document>
