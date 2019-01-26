@@ -28,7 +28,6 @@ class MainMenuController: NSObject {
         MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: defaultsKey, toAction: showModal)
     }
     @IBAction func showSwitcherClicked(_ sender: Any) {
-        //mainWindow.showWindow(nil)
         showModal()
     }
     @IBAction func settingsClicked(_ sender: Any) {

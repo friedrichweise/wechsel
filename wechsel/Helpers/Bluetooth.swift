@@ -12,19 +12,28 @@ import IOBluetooth
 class Bluetooth {
     
     let numberOfDevices: UInt
-    
+    var devices = [IOBluetoothDevice]()
+
     init(numberOfDevices: Int) {
         self.numberOfDevices = UInt(numberOfDevices)
     }
     
-    func getDevices() -> [IOBluetoothDevice] {
+    private func fetchDevices() -> [IOBluetoothDevice] {
         guard let devices = IOBluetoothDevice.recentDevices(self.numberOfDevices) as? [IOBluetoothDevice] else {
             print("Error accessing IOBluetoothDevice.recentDevices")
             return []
         }
         return devices
     }
+    func refreshDeviceList() {
+        self.devices = self.fetchDevices()
+    }
     
+    func getDevices() -> [IOBluetoothDevice] {
+        return self.devices
+    }
+    
+    //@todo: remove code duplication
     func connectToDevices(device: IOBluetoothDevice, finished: @escaping (Bool) -> Void) {
         DispatchQueue.global(qos: .background).async {
             let result = device.openConnection()
@@ -58,6 +67,7 @@ class Bluetooth {
     
     /*
      * inspired by blueutil by @toy (https://github.com/toy/blueutil/blob/master/blueutil.m)
+     * @todo: convert to async function to match connect/disconnect function
      */
     func setBluetoothPowerState(state: Bool)  {
         let powerState: Int32 = state ? Int32(1) : Int32(0)
@@ -70,5 +80,6 @@ class Bluetooth {
                 return
             }
         }
+        print("Unable to set Bluetooth Power State")
     }
 }

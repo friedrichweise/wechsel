@@ -30,7 +30,6 @@ class ViewController: NSViewController {
     /* modal window gets shown */
     override func viewWillAppear() {
         super.viewWillAppear()
-        
         tableView.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
         reloadTableView()
     }
@@ -80,7 +79,7 @@ class ViewController: NSViewController {
     }
     func reloadTableView() {
         //preserve selection state
-        let row = tableView.selectedRow
+        var row = tableView.selectedRow
         
         if self.bluetooth.getBluetoothPowerState() == false {
             self.state = ModalState.BluetoothMode
@@ -88,7 +87,15 @@ class ViewController: NSViewController {
             self.state = ModalState.ConnectionMode
         }
         
+        //refetch device list to incorperate connection changes
+        self.bluetooth.refreshDeviceList()
+        
         tableView.reloadData()
+        //select first row as default
+        if row == -1 {
+            row = 0
+        }
+        //restore selection state
         tableView.selectRowIndexes(IndexSet(integer: row), byExtendingSelection: false)
     }
     
