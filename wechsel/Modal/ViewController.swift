@@ -31,6 +31,7 @@ class ViewController: NSViewController {
     override func viewWillAppear() {
         super.viewWillAppear()
         tableView.selectRowIndexes(IndexSet(integer: 0), byExtendingSelection: false)
+        tableView.scrollRowToVisible(0)
         reloadTableView()
     }
     
@@ -79,7 +80,7 @@ class ViewController: NSViewController {
     }
     func reloadTableView() {
         //preserve selection state
-        var row = tableView.selectedRow
+        let selectedRow = tableView.selectedRow
         
         if self.bluetooth.getBluetoothPowerState() == false {
             self.state = ModalState.BluetoothMode
@@ -91,12 +92,9 @@ class ViewController: NSViewController {
         self.bluetooth.refreshDeviceList()
         
         tableView.reloadData()
-        //select first row as default
-        if row == -1 {
-            row = 0
-        }
+
         //restore selection state
-        tableView.selectRowIndexes(IndexSet(integer: row), byExtendingSelection: false)
+        tableView.selectRowIndexes(IndexSet(integer: selectedRow), byExtendingSelection: false)
     }
     
     @objc func closeModal() {
