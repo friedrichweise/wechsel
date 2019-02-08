@@ -19,8 +19,9 @@
 		FD4D6EDD21A57170005DB70B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDA21A5716F005DB70B /* Cartfile */; };
 		FD4D6EDE21A57170005DB70B /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */; };
 		FD4D6EDF21A57170005DB70B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDC21A5716F005DB70B /* README.md */; };
-		FDA9180E21FCBE2600EFD5B0 /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA9180D21FCBE2600EFD5B0 /* LaunchAtLogin.framework */; };
-		FDA9180F21FCBE2600EFD5B0 /* LaunchAtLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FDA9180D21FCBE2600EFD5B0 /* LaunchAtLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD7775CF220B6D9F00B72DEB /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7775CD220B6D9F00B72DEB /* LaunchAtLogin.framework */; };
+		FD7775D1220B6DA100B72DEB /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7775CD220B6D9F00B72DEB /* LaunchAtLogin.framework */; };
+		FD7775D2220B6DA100B72DEB /* LaunchAtLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD7775CD220B6D9F00B72DEB /* LaunchAtLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FDD7A71E21B0125F00130122 /* DeviceTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD7A71D21B0125F00130122 /* DeviceTableCellView.swift */; };
 		FDD7A72021B0126B00130122 /* BluetoothTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD7A71F21B0126B00130122 /* BluetoothTableCellView.swift */; };
 		FDF41902219DD5D500A8E8E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41901219DD5D500A8E8E1 /* AppDelegate.swift */; };
@@ -50,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FDA9180F21FCBE2600EFD5B0 /* LaunchAtLogin.framework in Embed Frameworks */,
+				FD7775D2220B6DA100B72DEB /* LaunchAtLogin.framework in Embed Frameworks */,
 				FD4CF5CE219F1E5600901936 /* MASShortcut.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -63,7 +64,6 @@
 		FD401BDA219F0DC80047F462 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 		FD401BDB219F0DC80047F462 /* PreferenceWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferenceWindowController.xib; sourceTree = "<group>"; };
 		FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
-		FD48B8CF21FCBDA600091F12 /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LaunchAtLogin.framework; sourceTree = "<group>"; };
 		FD4CF5C9219F152400901936 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = SOURCE_ROOT; };
 		FD4D6ED321A432F7005DB70B /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
@@ -71,8 +71,7 @@
 		FD4D6EDA21A5716F005DB70B /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		FD4D6EDC21A5716F005DB70B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FDA9180C21FCBDF800EFD5B0 /* LaunchAtLogin.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = LaunchAtLogin.framework.dSYM; path = Carthage/Build/Mac/LaunchAtLogin.framework.dSYM; sourceTree = "<group>"; };
-		FDA9180D21FCBE2600EFD5B0 /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
+		FD7775CD220B6D9F00B72DEB /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = SOURCE_ROOT; };
 		FDD7A71D21B0125F00130122 /* DeviceTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableCellView.swift; sourceTree = "<group>"; };
 		FDD7A71F21B0126B00130122 /* BluetoothTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTableCellView.swift; sourceTree = "<group>"; };
 		FDF418FE219DD5D500A8E8E1 /* wechsel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechsel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,9 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7775D1220B6DA100B72DEB /* LaunchAtLogin.framework in Frameworks */,
 				FD4CF5CD219F1E5600901936 /* MASShortcut.framework in Frameworks */,
 				FD4CF5CC219F1E3D00901936 /* MASShortcut.framework in Frameworks */,
-				FDA9180E21FCBE2600EFD5B0 /* LaunchAtLogin.framework in Frameworks */,
+				FD7775CF220B6D9F00B72DEB /* LaunchAtLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,8 +146,6 @@
 		FDF418F5219DD5D500A8E8E1 = {
 			isa = PBXGroup;
 			children = (
-				FDA9180D21FCBE2600EFD5B0 /* LaunchAtLogin.framework */,
-				FDA9180C21FCBDF800EFD5B0 /* LaunchAtLogin.framework.dSYM */,
 				FD4D6EDA21A5716F005DB70B /* Cartfile */,
 				FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */,
 				FD4D6EDC21A5716F005DB70B /* README.md */,
@@ -196,7 +194,7 @@
 		FDF4192F219DDD1600A8E8E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD48B8CF21FCBDA600091F12 /* LaunchAtLogin.framework */,
+				FD7775CD220B6D9F00B72DEB /* LaunchAtLogin.framework */,
 				FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */,
 			);
 			path = Frameworks;
