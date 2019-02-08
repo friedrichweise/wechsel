@@ -55,7 +55,7 @@ class ViewController: NSViewController {
         }
         
         let selectedCell = tableView.view(atColumn: 0, row: tableView.selectedRow, makeIfNecessary: false)
-        if let bluetoothCell = selectedCell as? BluetoothTableCellView {
+        if (selectedCell as? BluetoothTableCellView) != nil {
             self.bluetooth.setBluetoothPowerState(state: true)
             self.reloadTableView()
         }
