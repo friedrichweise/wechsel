@@ -11,56 +11,56 @@ public func timeAgoSince(_ date: Date) -> String {
     let components = (calendar as NSCalendar).components(unitFlags, from: date, to: now, options: [])
     
     if let year = components.year, year >= 2 {
-        return "\(year) years ago"
+        return String(format: NSLocalizedString("%d_YEARS_AGO", comment: ""), year)
     }
     
     if let year = components.year, year >= 1 {
-        return "Last year"
+        return NSLocalizedString("LAST_YEAR", comment: "")
     }
     
     if let month = components.month, month >= 2 {
-        return "\(month) months ago"
+        return String(format: NSLocalizedString("%d_MONTHS_AGO", comment: ""), month)
     }
     
     if let month = components.month, month >= 1 {
-        return "Last month"
+       return NSLocalizedString("LAST_MONTH", comment: "")
     }
     
     if let week = components.weekOfYear, week >= 2 {
-        return "\(week) weeks ago"
+        return String(format: NSLocalizedString("%d_WEEKS_AGO", comment: ""), week)
     }
     
     if let week = components.weekOfYear, week >= 1 {
-        return "Last week"
+        return NSLocalizedString("LAST_WEEK", comment: "")
     }
     
     if let day = components.day, day >= 2 {
-        return "\(day) days ago"
+        return String(format: NSLocalizedString("%d_DAYS_AGO", comment: ""), day)
     }
     
     if let day = components.day, day >= 1 {
-        return "Yesterday"
+        return NSLocalizedString("YESTERDAY", comment: "")
     }
     
     if let hour = components.hour, hour >= 2 {
-        return "\(hour) hours ago"
+        return String(format: NSLocalizedString("%d_HOURS_AGO", comment: ""), hour)
     }
     
     if let hour = components.hour, hour >= 1 {
-        return "An hour ago"
+        return NSLocalizedString("AN_HOUR_AGO", comment: "")
     }
     
     if let minute = components.minute, minute >= 2 {
-        return "\(minute) minutes ago"
+        return String(format: NSLocalizedString("%d_MINUTES_AGO", comment: ""), minute)
     }
     
     if let minute = components.minute, minute >= 1 {
-        return "A minute ago"
+        return NSLocalizedString("A_MINUTE_AGO", comment: "")
     }
     
     if let second = components.second, second >= 3 {
-        return "\(second) seconds ago"
+        return String(format: NSLocalizedString("%d_SECONDS_AGO", comment: ""), second)
     }
     
-    return "Just now"
+    return NSLocalizedString("JUST_NOW", comment: "")
 }
