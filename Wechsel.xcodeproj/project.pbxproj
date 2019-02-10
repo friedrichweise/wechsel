@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD399F7C220FA2D3008576CD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD399F7E220FA2D3008576CD /* MainWindow.xib */; };
+		FD399F83220FA315008576CD /* PreferenceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD399F85220FA315008576CD /* PreferenceWindowController.xib */; };
+		FD399F90220FA6EB008576CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD399F92220FA6EB008576CD /* Localizable.strings */; };
 		FD401BDC219F0DC80047F462 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD401BDA219F0DC80047F462 /* PreferenceWindowController.swift */; };
-		FD401BDD219F0DC80047F462 /* PreferenceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD401BDB219F0DC80047F462 /* PreferenceWindowController.xib */; };
 		FD401BDF219F0EFE0047F462 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */; };
 		FD4CF5CA219F152400901936 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4CF5C9219F152400901936 /* Config.swift */; };
 		FD4CF5CC219F1E3D00901936 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; };
@@ -30,7 +32,6 @@
 		FDF41913219DD5D700A8E8E1 /* wechselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41912219DD5D700A8E8E1 /* wechselTests.swift */; };
 		FDF4191E219DD65A00A8E8E1 /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF4191D219DD65A00A8E8E1 /* MainMenuController.swift */; };
 		FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */; };
-		FDF41922219DD81600A8E8E1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF41920219DD81600A8E8E1 /* MainWindow.xib */; };
 		FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF41923219DD93400A8E8E1 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,9 +61,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD399F7B220FA2A5008576CD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		FD399F7D220FA2D3008576CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		FD399F82220FA2D8008576CD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainWindow.strings; sourceTree = "<group>"; };
+		FD399F86220FA31B008576CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreferenceWindowController.xib; sourceTree = "<group>"; };
+		FD399F87220FA361008576CD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/PreferenceWindowController.strings; sourceTree = "<group>"; };
+		FD399F89220FA3D6008576CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		FD399F8B220FA3E2008576CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainWindow.strings; sourceTree = "<group>"; };
+		FD399F8D220FA3F8008576CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PreferenceWindowController.strings; sourceTree = "<group>"; };
+		FD399F91220FA6EB008576CD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD399F93220FA6EF008576CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FD401BD2219F07470047F462 /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
 		FD401BDA219F0DC80047F462 /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
-		FD401BDB219F0DC80047F462 /* PreferenceWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferenceWindowController.xib; sourceTree = "<group>"; };
 		FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
 		FD4CF5C9219F152400901936 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MASShortcut.framework; path = Carthage/Build/Mac/MASShortcut.framework; sourceTree = SOURCE_ROOT; };
@@ -85,7 +95,6 @@
 		FDF41914219DD5D700A8E8E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDF4191D219DD65A00A8E8E1 /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
 		FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
-		FDF41920219DD81600A8E8E1 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		FDF41923219DD93400A8E8E1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				FD401BDA219F0DC80047F462 /* PreferenceWindowController.swift */,
-				FD401BDB219F0DC80047F462 /* PreferenceWindowController.xib */,
+				FD399F85220FA315008576CD /* PreferenceWindowController.xib */,
 				FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */,
 			);
 			path = Preferences;
@@ -124,7 +133,7 @@
 		FD4CF5C8219F14AC00901936 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
-				FDF41920219DD81600A8E8E1 /* MainWindow.xib */,
+				FD399F7E220FA2D3008576CD /* MainWindow.xib */,
 				FDF4191F219DD81600A8E8E1 /* MainWindowController.swift */,
 				FDF41923219DD93400A8E8E1 /* ViewController.swift */,
 				FDD7A71D21B0125F00130122 /* DeviceTableCellView.swift */,
@@ -178,6 +187,7 @@
 				FDF4191D219DD65A00A8E8E1 /* MainMenuController.swift */,
 				FD4CF5C8219F14AC00901936 /* Modal */,
 				FD4CF5C7219F149E00901936 /* Preferences */,
+				FD399F92220FA6EB008576CD /* Localizable.strings */,
 			);
 			path = wechsel;
 			sourceTree = "<group>";
@@ -274,6 +284,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = FDF418F5219DD5D500A8E8E1;
 			productRefGroup = FDF418FF219DD5D500A8E8E1 /* Products */;
@@ -293,11 +304,12 @@
 			files = (
 				FD4D6EDD21A57170005DB70B /* Cartfile in Resources */,
 				FD4D6EDE21A57170005DB70B /* Cartfile.resolved in Resources */,
-				FD401BDD219F0DC80047F462 /* PreferenceWindowController.xib in Resources */,
+				FD399F83220FA315008576CD /* PreferenceWindowController.xib in Resources */,
 				FDF41904219DD5D700A8E8E1 /* Assets.xcassets in Resources */,
 				FDF41907219DD5D700A8E8E1 /* MainMenu.xib in Resources */,
+				FD399F90220FA6EB008576CD /* Localizable.strings in Resources */,
 				FD4D6EDF21A57170005DB70B /* README.md in Resources */,
-				FDF41922219DD81600A8E8E1 /* MainWindow.xib in Resources */,
+				FD399F7C220FA2D3008576CD /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,10 +380,41 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FD399F7E220FA2D3008576CD /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD399F7D220FA2D3008576CD /* Base */,
+				FD399F82220FA2D8008576CD /* de */,
+				FD399F8B220FA3E2008576CD /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		FD399F85220FA315008576CD /* PreferenceWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD399F86220FA31B008576CD /* Base */,
+				FD399F87220FA361008576CD /* de */,
+				FD399F8D220FA3F8008576CD /* en */,
+			);
+			name = PreferenceWindowController.xib;
+			sourceTree = "<group>";
+		};
+		FD399F92220FA6EB008576CD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD399F91220FA6EB008576CD /* de */,
+				FD399F93220FA6EF008576CD /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FDF41905219DD5D700A8E8E1 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FDF41906219DD5D700A8E8E1 /* Base */,
+				FD399F7B220FA2A5008576CD /* de */,
+				FD399F89220FA3D6008576CD /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -383,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -444,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

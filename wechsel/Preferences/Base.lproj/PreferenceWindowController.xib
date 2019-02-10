@@ -16,46 +16,38 @@
         <window title="Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="F0z-JX-Cv5">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="331" height="179"/>
+            <rect key="contentRect" x="196" y="240" width="314" height="179"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
             <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="331" height="179"/>
+                <rect key="frame" x="0.0" y="0.0" width="314" height="179"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXP-ov-PqN">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sXP-ov-PqN">
                         <rect key="frame" x="18" y="138" width="73" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Settings" id="2R8-Kc-aKg">
                             <font key="font" size="17" name=".AppleSystemUIFontBold"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-ga-7Mq">
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZiZ-ga-7Mq">
                         <rect key="frame" x="18" y="96" width="89" height="19"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Global Hotkey" id="ofx-Yw-abH">
                             <font key="font" metaFont="titleBar"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CrM-dW-Ggr" customClass="MASShortcutView">
-                        <rect key="frame" x="122" y="100" width="163" height="19"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    </customView>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFz-zm-rcQ">
-                        <rect key="frame" x="18" y="66" width="89" height="19"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFz-zm-rcQ">
+                        <rect key="frame" x="18" y="66" width="85" height="19"/>
                         <textFieldCell key="cell" lineBreakMode="clipping" title="Open at login" id="nCR-kh-nWe">
                             <font key="font" metaFont="titleBar"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OOF-Fy-u4r">
-                        <rect key="frame" x="247" y="13" width="70" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OOF-Fy-u4r">
+                        <rect key="frame" x="221" y="13" width="70" height="32"/>
                         <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nUh-PS-ktE">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -64,20 +56,32 @@
                             <action selector="saveButtonClicked:" target="E2g-TU-wWN" id="wch-i5-TzE"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLv-DA-LhJ">
-                        <rect key="frame" x="120" y="67" width="22" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLv-DA-LhJ">
+                        <rect key="frame" x="265" y="67" width="22" height="18"/>
                         <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="T7c-tt-Fxi">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                     </button>
+                    <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CrM-dW-Ggr" customClass="MASShortcutView">
+                        <rect key="frame" x="128" y="96" width="157" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </customView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eLv-DA-LhJ" secondAttribute="trailing" constant="29" id="M1J-lH-CCU"/>
+                    <constraint firstItem="sXP-ov-PqN" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="PtF-1k-tr3"/>
+                    <constraint firstAttribute="bottom" secondItem="OOF-Fy-u4r" secondAttribute="bottom" constant="20" id="WxW-fX-QtF"/>
+                    <constraint firstItem="OOF-Fy-u4r" firstAttribute="leading" relation="lessThanOrEqual" secondItem="se5-gp-TjO" secondAttribute="leading" constant="227" id="chv-4p-lva"/>
+                    <constraint firstAttribute="trailing" secondItem="OOF-Fy-u4r" secondAttribute="trailing" constant="29" id="gaS-5L-Ook"/>
+                    <constraint firstItem="ZiZ-ga-7Mq" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="qz5-WI-2bp"/>
+                    <constraint firstItem="BFz-zm-rcQ" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="uCc-oh-Gd5"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="62.5" y="100.5"/>
+            <point key="canvasLocation" x="54" y="100.5"/>
         </window>
         <viewController id="E2g-TU-wWN" customClass="PreferenceViewController" customModule="wechsel" customModuleProvider="target">
             <connections>

@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "Settings"; ObjectID = "2R8-Kc-aKg"; */
+"2R8-Kc-aKg.title" = "Einstellungen";
+
+/* Class = "NSWindow"; title = "Settings"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Einstellungen";
+
+/* Class = "NSTextFieldCell"; title = "Open at login"; ObjectID = "nCR-kh-nWe"; */
+"nCR-kh-nWe.title" = "Beim Anmelden öffnen";
+
+/* Class = "NSButtonCell"; title = "Save"; ObjectID = "nUh-PS-ktE"; */
+"nUh-PS-ktE.title" = "Speichern";
+
+/* Class = "NSTextFieldCell"; title = "Global Hotkey"; ObjectID = "ofx-Yw-abH"; */
+"ofx-Yw-abH.title" = "Global Hotkey";

@@ -1,0 +1,35 @@
+/* 
+  Localization.strings
+  wechsel
+
+  Created by Friedrich Weise on 10.02.19.
+  Copyright © 2019 Friedrich Weise. All rights reserved.
+*/
+
+/* % days ago */
+"%d_DAYS_AGO" = "%d days ago";
+
+/* % Hours ago */
+"%d_HOURS_AGO" = "%d hours ago";
+
+/* % Minutes ago */
+"%d_MINUTES_AGO" = "%d minutes ago";
+
+/* % Weeks ago */
+"%d_WEEKS_AGO" = "%d weeks ago";
+
+/* % Months ago */
+"%d_MONTHS_AGO" = "%d months ago";
+
+/* % Years ago */
+"%d_YEARS_AGO" = "%d years ago";
+
+
+"JUST_NOW" = "Just now";
+"A_MINUTE_AGO" = "A minute ago";
+"AN_HOUR_AGO" = "An hour ago";
+"YESTERDAY" = "Yesterday";
+"LAST_WEEK" = "Last week";
+"LAST_MONTH" = "Last month";
+"LAST_YEAR" = "Last year";
+
