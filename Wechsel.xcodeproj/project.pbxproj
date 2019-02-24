@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD27BD7C2222F67300CC947B /* SettingsButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD27BD7B2222F67300CC947B /* SettingsButtonViewController.swift */; };
 		FD399F7C220FA2D3008576CD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD399F7E220FA2D3008576CD /* MainWindow.xib */; };
 		FD399F83220FA315008576CD /* PreferenceWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD399F85220FA315008576CD /* PreferenceWindowController.xib */; };
 		FD399F90220FA6EB008576CD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD399F92220FA6EB008576CD /* Localizable.strings */; };
@@ -61,6 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FD27BD7B2222F67300CC947B /* SettingsButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButtonViewController.swift; sourceTree = "<group>"; };
 		FD399F7B220FA2A5008576CD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		FD399F7D220FA2D3008576CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		FD399F82220FA2D8008576CD /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainWindow.strings; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				FDF41923219DD93400A8E8E1 /* ViewController.swift */,
 				FDD7A71D21B0125F00130122 /* DeviceTableCellView.swift */,
 				FDD7A71F21B0126B00130122 /* BluetoothTableCellView.swift */,
+				FD27BD7B2222F67300CC947B /* SettingsButtonViewController.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				FDD7A71E21B0125F00130122 /* DeviceTableCellView.swift in Sources */,
 				FD4D6ED921A56AB3005DB70B /* TimeAgo.swift in Sources */,
 				FD401BDC219F0DC80047F462 /* PreferenceWindowController.swift in Sources */,
+				FD27BD7C2222F67300CC947B /* SettingsButtonViewController.swift in Sources */,
 				FD4CF5CA219F152400901936 /* Config.swift in Sources */,
 				FDF41921219DD81600A8E8E1 /* MainWindowController.swift in Sources */,
 				FDF41924219DD93400A8E8E1 /* ViewController.swift in Sources */,

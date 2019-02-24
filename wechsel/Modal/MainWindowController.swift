@@ -18,7 +18,6 @@ class MainWindowController: NSWindowController {
     
     override func windowDidLoad() {
         titleBarController.layoutAttribute = .right
-        // set the titleBar
         self.window?.addTitlebarAccessoryViewController(
             titleBarController
         )
