@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="wechsel" customModuleProvider="target">
             <connections>
+                <outlet property="titleBarController" destination="8Lf-D6-VwT" id="eVc-IX-shR"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -148,6 +149,26 @@
                 <outlet property="view" destination="se5-gp-TjO" id="KdV-Cd-dRJ"/>
             </connections>
         </viewController>
+        <customView id="S03-gS-UEn">
+            <rect key="frame" x="0.0" y="0.0" width="36" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kx6-kq-5hc">
+                    <rect key="frame" x="-6" y="-7" width="47" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="x" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vkr-gD-32V">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+            </subviews>
+            <point key="canvasLocation" x="466" y="-19.5"/>
+        </customView>
+        <customObject id="8Lf-D6-VwT" customClass="NSTitlebarAccessoryViewController">
+            <connections>
+                <outlet property="view" destination="S03-gS-UEn" id="v88-D2-oab"/>
+            </connections>
+        </customObject>
     </objects>
     <resources>
         <image name="bluetoothDisabled" width="100" height="100"/>
