@@ -9,11 +9,10 @@
 import Foundation
 
 class SettingsButtonViewController: NSTitlebarAccessoryViewController {
-    var preferenceWindowController: PreferenceWindowController!
-
+    
     @IBAction func saveButtonClicked(_ sender: Any) {
         // @todo: should use the instanciated Window from MainMenuController
-        preferenceWindowController = PreferenceWindowController()
+        let preferenceWindowController = PreferenceWindowController.shared
         preferenceWindowController.showWindow(nil)
     }
 }

@@ -22,7 +22,7 @@ class MainMenuController: NSObject {
             button.image = NSImage(named:NSImage.Name("StatusBarIcon"))
         }
         mainWindowController = MainWindowController()
-        preferenceWindowController = PreferenceWindowController()
+        preferenceWindowController = PreferenceWindowController.shared
         
         //bind shortcut from user defaults to showModal func
         MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: defaultsKey, toAction: showModal)

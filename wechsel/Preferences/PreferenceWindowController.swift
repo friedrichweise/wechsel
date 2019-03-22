@@ -9,10 +9,13 @@
 import Cocoa
 
 class PreferenceWindowController: NSWindowController {
-    
+
     override var windowNibName : String! {
         return "PreferenceWindowController"
     }
+    
+    static let shared = PreferenceWindowController()
+
     
     override func windowDidLoad() {
         super.windowDidLoad()
