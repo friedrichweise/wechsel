@@ -150,12 +150,12 @@
             </connections>
         </viewController>
         <customView id="S03-gS-UEn">
-            <rect key="frame" x="0.0" y="0.0" width="21" height="21"/>
+            <rect key="frame" x="0.0" y="0.0" width="22" height="20"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAm-dE-G1Y">
-                    <rect key="frame" x="4" y="4" width="13" height="13"/>
-                    <autoresizingMask key="autoresizingMask"/>
+                    <rect key="frame" x="2" y="4" width="12" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                     <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSActionTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" transparent="YES" imageScaling="proportionallyDown" inset="2" id="FRx-Zj-Adk">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
@@ -165,7 +165,7 @@
                     </connections>
                 </button>
             </subviews>
-            <point key="canvasLocation" x="465.5" y="-19.5"/>
+            <point key="canvasLocation" x="467" y="-20"/>
         </customView>
         <customObject id="8Lf-D6-VwT" customClass="SettingsButtonViewController" customModule="wechsel" customModuleProvider="target">
             <connections>
