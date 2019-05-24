@@ -11,7 +11,7 @@ import Cocoa
 class MainMenuController: NSObject {
     @IBOutlet weak var mainMenu: NSMenu!
     
-    let defaultsKey = Config.key
+    let modalHotKeyDefaultsKey = Config.key
     var mainWindowController: MainWindowController!
     var preferenceWindowController: PreferenceWindowController!
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
@@ -25,23 +25,23 @@ class MainMenuController: NSObject {
         preferenceWindowController = PreferenceWindowController.shared
         
         //bind shortcut from user defaults to showModal func
-        MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: defaultsKey, toAction: showModal)
+        MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: modalHotKeyDefaultsKey, toAction: showModal)
         
         self.setModalKeyCodeForMenu()
         
         // add Observer for UserDefault changes of the ModalKeyCode
-        UserDefaults.standard.addObserver(self, forKeyPath: defaultsKey, options: NSKeyValueObservingOptions.new, context: nil)
+        UserDefaults.standard.addObserver(self, forKeyPath: modalHotKeyDefaultsKey, options: NSKeyValueObservingOptions.new, context: nil)
 
     }
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if(keyPath == defaultsKey) {
+        if(keyPath == modalHotKeyDefaultsKey) {
             self.setModalKeyCodeForMenu()
         }
     }
     func setModalKeyCodeForMenu() {
         //set shortcut of menu icon
         if let showModalMenuItem = mainMenu.item(withTag: 1) {
-            if let serializedShortcut = UserDefaults.standard.data(forKey: defaultsKey) {
+            if let serializedShortcut = UserDefaults.standard.data(forKey: modalHotKeyDefaultsKey) {
                 let shortcut = NSKeyedUnarchiver.unarchiveObject(with: serializedShortcut) as! MASShortcut
                 showModalMenuItem.keyEquivalent = shortcut.keyCodeStringForKeyEquivalent
                 showModalMenuItem.keyEquivalentModifierMask = NSEvent.ModifierFlags(rawValue: shortcut.modifierFlags)
@@ -66,6 +66,6 @@ class MainMenuController: NSObject {
         }
     }
     deinit {
-        UserDefaults.standard.removeObserver(self, forKeyPath: defaultsKey)
+        UserDefaults.standard.removeObserver(self, forKeyPath: modalHotKeyDefaultsKey)
     }
 }
