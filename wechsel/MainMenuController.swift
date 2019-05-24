@@ -26,6 +26,27 @@ class MainMenuController: NSObject {
         
         //bind shortcut from user defaults to showModal func
         MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: defaultsKey, toAction: showModal)
+        
+        self.setModalKeyCodeForMenu()
+        
+        // add Observer for UserDefault changes of the ModalKeyCode
+        UserDefaults.standard.addObserver(self, forKeyPath: defaultsKey, options: NSKeyValueObservingOptions.new, context: nil)
+
+    }
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if(keyPath == defaultsKey) {
+            self.setModalKeyCodeForMenu()
+        }
+    }
+    func setModalKeyCodeForMenu() {
+        //set shortcut of menu icon
+        if let showModalMenuItem = mainMenu.item(withTag: 1) {
+            if let serializedShortcut = UserDefaults.standard.data(forKey: defaultsKey) {
+                let shortcut = NSKeyedUnarchiver.unarchiveObject(with: serializedShortcut) as! MASShortcut
+                showModalMenuItem.keyEquivalent = shortcut.keyCodeStringForKeyEquivalent
+                showModalMenuItem.keyEquivalentModifierMask = NSEvent.ModifierFlags(rawValue: shortcut.modifierFlags)
+            }
+        }
     }
     @IBAction func showSwitcherClicked(_ sender: Any) {
         showModal()
@@ -44,5 +65,7 @@ class MainMenuController: NSObject {
             window.orderFrontRegardless()
         }
     }
-
+    deinit {
+        UserDefaults.standard.removeObserver(self, forKeyPath: defaultsKey)
+    }
 }
