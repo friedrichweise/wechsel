@@ -264,6 +264,7 @@
 				TargetAttributes = {
 					FDF418FD219DD5D500A8E8E1 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -563,7 +564,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Bridging_Header.h;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -591,7 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = Bridging_Header.h;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
