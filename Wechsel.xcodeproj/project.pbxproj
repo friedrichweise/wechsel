@@ -14,7 +14,6 @@
 		FD401BDC219F0DC80047F462 /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD401BDA219F0DC80047F462 /* PreferenceWindowController.swift */; };
 		FD401BDF219F0EFE0047F462 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD401BDE219F0EFE0047F462 /* PreferenceViewController.swift */; };
 		FD4CF5CA219F152400901936 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4CF5C9219F152400901936 /* Config.swift */; };
-		FD4CF5CC219F1E3D00901936 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; };
 		FD4CF5CD219F1E5600901936 /* MASShortcut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; };
 		FD4CF5CE219F1E5600901936 /* MASShortcut.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD4CF5CB219F1E3D00901936 /* MASShortcut.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FD4D6ED421A432F7005DB70B /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4D6ED321A432F7005DB70B /* Bluetooth.swift */; };
@@ -22,7 +21,6 @@
 		FD4D6EDD21A57170005DB70B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDA21A5716F005DB70B /* Cartfile */; };
 		FD4D6EDE21A57170005DB70B /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDB21A5716F005DB70B /* Cartfile.resolved */; };
 		FD4D6EDF21A57170005DB70B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FD4D6EDC21A5716F005DB70B /* README.md */; };
-		FD7775CF220B6D9F00B72DEB /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7775CD220B6D9F00B72DEB /* LaunchAtLogin.framework */; };
 		FD7775D1220B6DA100B72DEB /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7775CD220B6D9F00B72DEB /* LaunchAtLogin.framework */; };
 		FD7775D2220B6DA100B72DEB /* LaunchAtLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD7775CD220B6D9F00B72DEB /* LaunchAtLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FDD7A71E21B0125F00130122 /* DeviceTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD7A71D21B0125F00130122 /* DeviceTableCellView.swift */; };
@@ -107,8 +105,6 @@
 			files = (
 				FD7775D1220B6DA100B72DEB /* LaunchAtLogin.framework in Frameworks */,
 				FD4CF5CD219F1E5600901936 /* MASShortcut.framework in Frameworks */,
-				FD4CF5CC219F1E3D00901936 /* MASShortcut.framework in Frameworks */,
-				FD7775CF220B6D9F00B72DEB /* LaunchAtLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +259,7 @@
 					blueutil,
 				);
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Friedrich Weise";
 				TargetAttributes = {
 					FDF418FD219DD5D500A8E8E1 = {
