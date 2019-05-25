@@ -15,6 +15,9 @@
 /* % Minutes ago */
 "%d_MINUTES_AGO" = "%d minutes ago";
 
+/* % Seconds ago */
+"%d_SECONDS_AGO" = "%d seconds ago";
+
 /* % Weeks ago */
 "%d_WEEKS_AGO" = "%d weeks ago";
 

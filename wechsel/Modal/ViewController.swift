@@ -71,11 +71,8 @@ class ViewController: NSViewController {
                 }
             }
             
-            if device.isConnected() {
-                self.bluetooth.modifyConnection(device: device, desiredState: false, finished: finishedHandler)
-            } else {
-                self.bluetooth.modifyConnection(device: device, desiredState: true, finished: finishedHandler)
-            }
+            let desiredState = !device.isConnected()
+            self.bluetooth.modifyConnection(device: device, desiredState: desiredState, finished: finishedHandler)
         }
     }
     func reloadTableView() {
