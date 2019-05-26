@@ -11,18 +11,18 @@ import IOBluetooth
 
 class Bluetooth {
     
-    let numberOfDevices: UInt
     var devices = [IOBluetoothDevice]()
 
-    init(numberOfDevices: Int) {
-        self.numberOfDevices = UInt(numberOfDevices)
-    }
-    
     private func fetchDevices() -> [IOBluetoothDevice] {
-        guard let devices = IOBluetoothDevice.recentDevices(self.numberOfDevices) as? [IOBluetoothDevice] else {
+        guard var devices = IOBluetoothDevice.recentDevices(0) as? [IOBluetoothDevice] else {
             print("Error accessing IOBluetoothDevice.recentDevices")
             return []
         }
+        
+        devices = devices.filter { (device : IOBluetoothDevice) -> Bool in
+            return device.deviceClassMajor == kBluetoothDeviceClassMajorAudio
+        }
+ 
         //sort device array by connection state
         let sortedDevices = devices.sorted(by: {
             if $0.isConnected() && $1.isConnected() {

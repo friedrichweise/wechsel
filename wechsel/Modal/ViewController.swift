@@ -18,7 +18,7 @@ class ViewController: NSViewController {
     
     @IBOutlet var tableView: NSTableView!
 
-    var bluetooth: Bluetooth = Bluetooth(numberOfDevices: Config.numberOfDevices)
+    var bluetooth: Bluetooth = Bluetooth()
     var state: ModalState = ModalState.ConnectionMode
     /* initalize view */
     override func viewDidLoad() {
@@ -132,7 +132,7 @@ extension ViewController: NSTableViewDelegate {
             let recentAccess = bluetoothDevices[row].recentAccessDate() else {
             return nil
         }
-        
+       
         deviceView.nameTextField.stringValue = name
         deviceView.lastUsedTextField.stringValue = timeAgoSince(recentAccess)
         deviceView.setConnectionState(connnected: bluetoothDevices[row].isConnected())
