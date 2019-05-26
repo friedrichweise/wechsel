@@ -23,7 +23,7 @@ class ViewController: NSViewController {
     /* initalize view */
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.backgroundColor = .clear
         tableView.target = self
         tableView.doubleAction = #selector(tableViewDoubleClick(_:))
     }
