@@ -38,14 +38,6 @@
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BFz-zm-rcQ">
-                        <rect key="frame" x="50" y="58" width="85" height="18"/>
-                        <textFieldCell key="cell" lineBreakMode="clipping" title="Open at login" id="nCR-kh-nWe">
-                            <font key="font" metaFont="titleBar"/>
-                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="OOF-Fy-u4r">
                         <rect key="frame" x="221" y="13" width="70" height="32"/>
                         <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nUh-PS-ktE">
@@ -56,9 +48,9 @@
                             <action selector="saveButtonClicked:" target="E2g-TU-wWN" id="wch-i5-TzE"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eLv-DA-LhJ">
-                        <rect key="frame" x="18" y="58" width="22" height="18"/>
-                        <buttonCell key="cell" type="check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="T7c-tt-Fxi">
+                    <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLv-DA-LhJ">
+                        <rect key="frame" x="18" y="58" width="107" height="18"/>
+                        <buttonCell key="cell" type="check" title="Open at Login" bezelStyle="regularSquare" imagePosition="left" inset="2" id="T7c-tt-Fxi">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -75,15 +67,10 @@
                     <constraint firstAttribute="trailing" secondItem="CrM-dW-Ggr" secondAttribute="trailing" constant="29" id="E7F-cU-TVs"/>
                     <constraint firstItem="OOF-Fy-u4r" firstAttribute="trailing" secondItem="CrM-dW-Ggr" secondAttribute="trailing" id="LWX-fD-QxN"/>
                     <constraint firstItem="sXP-ov-PqN" firstAttribute="leading" secondItem="ZiZ-ga-7Mq" secondAttribute="leading" id="V2m-ae-uej"/>
-                    <constraint firstItem="BFz-zm-rcQ" firstAttribute="firstBaseline" secondItem="eLv-DA-LhJ" secondAttribute="firstBaseline" id="Vbe-Pg-l9r"/>
                     <constraint firstItem="ZiZ-ga-7Mq" firstAttribute="leading" secondItem="eLv-DA-LhJ" secondAttribute="leading" id="ZAm-GM-0I9"/>
-                    <constraint firstItem="BFz-zm-rcQ" firstAttribute="leading" secondItem="eLv-DA-LhJ" secondAttribute="trailing" constant="14" id="eUt-PC-1eR"/>
                     <constraint firstItem="sXP-ov-PqN" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" symbolic="YES" id="h7S-c9-0nj"/>
                     <constraint firstAttribute="bottom" secondItem="OOF-Fy-u4r" secondAttribute="bottom" constant="20" symbolic="YES" id="h95-dw-tZs"/>
-                    <constraint firstItem="BFz-zm-rcQ" firstAttribute="centerY" secondItem="eLv-DA-LhJ" secondAttribute="centerY" id="hqO-yx-Pmn"/>
-                    <constraint firstItem="BFz-zm-rcQ" firstAttribute="top" secondItem="ZiZ-ga-7Mq" secondAttribute="bottom" constant="18" id="qvP-Bh-muc"/>
                     <constraint firstItem="CrM-dW-Ggr" firstAttribute="centerY" secondItem="ZiZ-ga-7Mq" secondAttribute="centerY" id="ulP-aa-pEV"/>
-                    <constraint firstItem="BFz-zm-rcQ" firstAttribute="firstBaseline" secondItem="eLv-DA-LhJ" secondAttribute="baseline" id="zYv-BA-T12"/>
                     <constraint firstItem="sXP-ov-PqN" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" symbolic="YES" id="zlD-O1-idb"/>
                 </constraints>
             </view>

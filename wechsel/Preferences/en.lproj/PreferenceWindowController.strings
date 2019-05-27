@@ -5,8 +5,8 @@
 /* Class = "NSWindow"; title = "Settings"; ObjectID = "F0z-JX-Cv5"; */
 "F0z-JX-Cv5.title" = "Settings";
 
-/* Class = "NSTextFieldCell"; title = "Open at login"; ObjectID = "nCR-kh-nWe"; */
-"nCR-kh-nWe.title" = "Open at login";
+/* Class = "NSButtonCell"; title = "Open at Login"; ObjectID = "T7c-tt-Fxi"; */
+"T7c-tt-Fxi.title" = "Open at login";
 
 /* Class = "NSButtonCell"; title = "Save"; ObjectID = "nUh-PS-ktE"; */
 "nUh-PS-ktE.title" = "Save";
