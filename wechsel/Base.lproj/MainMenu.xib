@@ -22,7 +22,7 @@
                         <action selector="showSwitcherClicked:" target="j8r-fH-fGA" id="On8-7M-Brv"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Settings" keyEquivalent="s" id="Eiw-e9-QAR">
+                <menuItem title="Settings" keyEquivalent="," id="Eiw-e9-QAR">
                     <connections>
                         <action selector="settingsClicked:" target="j8r-fH-fGA" id="Sft-je-MIa"/>
                     </connections>

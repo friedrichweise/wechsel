@@ -19,8 +19,10 @@ class PreferenceViewController: NSViewController {
         shortcutView.associatedUserDefaultsKey = Config.key
         openAtLoginCheckbox.state = LaunchAtLogin.isEnabled ? .on : .off
     }
-    @IBAction func saveButtonClicked(_ sender: Any) {
+    @IBAction func openAtLoginCheckboxClicked(_ sender: Any) {
         LaunchAtLogin.isEnabled = openAtLoginCheckbox.state == .on ? true : false
+    }
+    @IBAction func saveButtonClicked(_ sender: Any) {
         if let window = self.view.window {
             window.close()
         }
