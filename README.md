@@ -1,4 +1,4 @@
-#  wechsel
+#  <a href="https://wechsel.weise.io/">wechsel</a>
 
 wechsel (`/ˈvɛksəl/`) claims to simplify the interaction with  bluetooth connections on macOS. Instead of using the builtin Bluetooth menu bar, you can seamlessly switch between bluetooth audio devices using your keyboard. The tool offers a global hotkey to display a Spotlight-like window. It seeks to be a more generic alternative for similar tools like <a href="https://c-command.com/toothfairy/">ToothFairy</a> and <a href="https://www.producthunt.com/posts/airbuddy-2">AirBuddy</a>.
 The implementation is based on the work of  <a href="https://github.com/toy/blueutil">blueutil</a> and utilizes the system level <a href="https://developer.apple.com/documentation/iobluetooth">IOBluetooth</a> framework.
