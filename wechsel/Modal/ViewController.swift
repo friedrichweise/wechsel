@@ -18,11 +18,12 @@ class ViewController: NSViewController {
     
     @IBOutlet var tableView: NSTableView!
 
-    var bluetooth: Bluetooth = Bluetooth()
+    var bluetooth: Bluetooth = Bluetooth.shared
     var state: ModalState = ModalState.ConnectionMode
     /* initalize view */
     override func viewDidLoad() {
         super.viewDidLoad()
+        bluetooth.delegate = self
         tableView.backgroundColor = .clear
         tableView.target = self
         tableView.doubleAction = #selector(tableViewDoubleClick(_:))
@@ -98,6 +99,16 @@ class ViewController: NSViewController {
         if let window = self.view.window {
             window.close()
         }
+    }
+}
+
+extension ViewController: BluetoothWatcherDelegate {
+    func deviceConnected() {
+        self.reloadTableView()
+    }
+    
+    func deviceDisconnected() {
+        self.reloadTableView()
     }
 }
 

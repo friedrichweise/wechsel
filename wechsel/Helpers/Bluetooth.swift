@@ -9,9 +9,28 @@
 import Foundation
 import IOBluetooth
 
-class Bluetooth {
-    
+protocol BluetoothWatcherDelegate: class {
+    func deviceConnected()
+    func deviceDisconnected()
+}
+
+class Bluetooth: IOBluetoothRFCOMMChannelDelegate {
     var devices = [IOBluetoothDevice]()
+    weak var delegate: BluetoothWatcherDelegate?
+
+    static let shared = Bluetooth()
+    private init() {
+        IOBluetoothDevice.register(forConnectNotifications: self, selector: #selector(self.connected(notification:device:)))
+    }
+
+    @objc func connected(notification: IOBluetoothUserNotification, device: IOBluetoothDevice) {
+        device.register(forDisconnectNotification: self, selector: #selector(self.disconnected(notification:device:)))
+        self.delegate?.deviceConnected()
+    }
+    @objc func disconnected(notification: IOBluetoothUserNotification, device: IOBluetoothDevice) {
+        self.delegate?.deviceDisconnected()
+        notification.unregister()
+    }
 
     private func fetchDevices() -> [IOBluetoothDevice] {
         guard var devices = IOBluetoothDevice.recentDevices(0) as? [IOBluetoothDevice] else {
