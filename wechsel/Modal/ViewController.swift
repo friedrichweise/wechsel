@@ -68,8 +68,8 @@ class ViewController: NSViewController {
                 deviceCellView.indicateState()
                 if success {
                     self.perform(#selector(self.closeModal), with: nil, afterDelay: 0)
-                    self.reloadTableView()
                 }
+                self.reloadTableView()
             }
             
             let desiredState = !device.isConnected()
@@ -78,10 +78,11 @@ class ViewController: NSViewController {
     }
     func reloadTableView() {
         //preserve selection state
-        let selectedRow = tableView.selectedRow
+        var selectedRow = tableView.selectedRow
         
         if self.bluetooth.getBluetoothPowerState() == false {
             self.state = ModalState.BluetoothMode
+            selectedRow = 0
         } else {
             self.state = ModalState.ConnectionMode
         }
