@@ -10,8 +10,7 @@ The implementation is based on the work of  <a href="https://github.com/toy/blue
 
 Install using homebrew:
 ```sh
-brew tap friedrichweise/wechsel
-brew cask install wechsel
+brew cask install friedrichweise/wechsel/wechsel
 ```
 or download the application from the <a href="https://github.com/friedrichweise/wechsel/releases">release-page</a>.
 
