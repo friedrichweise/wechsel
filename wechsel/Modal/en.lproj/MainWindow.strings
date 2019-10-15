@@ -19,3 +19,9 @@
 
 /* Class = "NSTextFieldCell"; title = "Bluetooth is disabled"; ObjectID = "stL-Ij-BaL"; */
 "stL-Ij-BaL.title" = "Bluetooth is disabled";
+
+/* Class = "NSTextFieldCell"; title = "No paired device found!"; ObjectID = "Wnu-CW-ZjC"; */
+"Wnu-CW-ZjC.title" = "No paired devices found!";
+
+/* Class = "NSTextFieldCell"; title = "Use the System Preferences to pair a new bluetooth device"; ObjectID = "hHg-Lk-oza"; */
+"hHg-Lk-oza.title" = "Use the System Preferences to pair a new bluetooth device";

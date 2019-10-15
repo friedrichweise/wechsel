@@ -21,8 +21,41 @@
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
             <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
+                    <stackView distribution="equalSpacing" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CaX-wy-cAC">
+                        <rect key="frame" x="30" y="112" width="420" height="46"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lja-wI-mRx">
+                                <rect key="frame" x="-2" y="25" width="194" height="21"/>
+                                <textFieldCell key="cell" title="No paired device found!" id="Wnu-CW-ZjC">
+                                    <font key="font" metaFont="systemSemibold" size="17"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-u7-rzh">
+                                <rect key="frame" x="-2" y="0.0" width="362" height="17"/>
+                                <textFieldCell key="cell" title="Use the System Preferences to pair a new bluetooth device" id="hHg-Lk-oza">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="420" id="2WT-pN-7HK"/>
+                            <constraint firstItem="eVr-u7-rzh" firstAttribute="leading" secondItem="Lja-wI-mRx" secondAttribute="leading" id="h5w-g5-yZe"/>
+                        </constraints>
+                        <visibilityPriorities>
+                            <integer value="1000"/>
+                            <integer value="1000"/>
+                        </visibilityPriorities>
+                        <customSpacing>
+                            <real value="3.4028234663852886e+38"/>
+                            <real value="3.4028234663852886e+38"/>
+                        </customSpacing>
+                    </stackView>
                     <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="42" horizontalPageScroll="10" verticalLineScroll="42" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf6-5h-7UX">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -139,6 +172,10 @@
                         </scroller>
                     </scrollView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="CaX-wy-cAC" firstAttribute="centerX" secondItem="se5-gp-TjO" secondAttribute="centerX" id="EbX-wi-WNj"/>
+                    <constraint firstItem="CaX-wy-cAC" firstAttribute="centerY" secondItem="se5-gp-TjO" secondAttribute="centerY" id="cwx-Sa-CHu"/>
+                </constraints>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
@@ -146,6 +183,8 @@
         </window>
         <viewController id="Hck-wl-W32" customClass="ViewController" customModule="wechsel" customModuleProvider="target">
             <connections>
+                <outlet property="errorView" destination="CaX-wy-cAC" id="Ezd-Lv-W8c"/>
+                <outlet property="scrollView" destination="Yf6-5h-7UX" id="IBK-HS-qd3"/>
                 <outlet property="tableView" destination="tDl-7J-6G6" id="TXY-pg-cLj"/>
                 <outlet property="view" destination="se5-gp-TjO" id="KdV-Cd-dRJ"/>
             </connections>
@@ -173,6 +212,15 @@
                 <outlet property="view" destination="S03-gS-UEn" id="v88-D2-oab"/>
             </connections>
         </customObject>
+        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="2hU-nB-msE">
+            <rect key="frame" x="0.0" y="0.0" width="37" height="17"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="ewL-e7-iFN">
+                <font key="font" usesAppearanceFont="YES"/>
+                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+            </textFieldCell>
+        </textField>
     </objects>
     <resources>
         <image name="NSActionTemplate" width="14" height="14"/>

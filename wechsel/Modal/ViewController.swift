@@ -11,13 +11,16 @@ import Cocoa
 enum ModalState {
     case ConnectionMode
     case BluetoothMode
+    case EmptyDeviceListMode
 }
 
 
 class ViewController: NSViewController {
     
+    @IBOutlet var errorView: NSStackView!
     @IBOutlet var tableView: NSTableView!
-
+    @IBOutlet var scrollView: NSScrollView!
+    
     var bluetooth: Bluetooth = Bluetooth.shared
     var state: ModalState = ModalState.ConnectionMode
     /* initalize view */
@@ -80,15 +83,22 @@ class ViewController: NSViewController {
         //preserve selection state
         var selectedRow = tableView.selectedRow
         
+        //refetch device list to incorperate connection changes
+        self.bluetooth.refreshDeviceList()
+        
+        self.errorView.isHidden = true
+        self.scrollView.isHidden = false
+        
         if self.bluetooth.getBluetoothPowerState() == false {
             self.state = ModalState.BluetoothMode
             selectedRow = 0
+        } else if self.bluetooth.getDevices().isEmpty {
+            self.state = ModalState.EmptyDeviceListMode
+            self.scrollView.isHidden = true
+            self.errorView.isHidden = false
         } else {
             self.state = ModalState.ConnectionMode
         }
-        
-        //refetch device list to incorperate connection changes
-        self.bluetooth.refreshDeviceList()
         
         tableView.reloadData()
 
@@ -144,7 +154,6 @@ extension ViewController: NSTableViewDelegate {
             let recentAccess = bluetoothDevices[row].recentAccessDate() else {
             return nil
         }
-       
         deviceView.nameTextField.stringValue = name
         deviceView.lastUsedTextField.stringValue = timeAgoSince(recentAccess)
         deviceView.setConnectionState(connnected: bluetoothDevices[row].isConnected())

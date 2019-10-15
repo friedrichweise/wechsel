@@ -7,3 +7,9 @@
 
 /* Class = "NSTextFieldCell"; title = "Bluetooth is disabled"; ObjectID = "stL-Ij-BaL"; */
 "stL-Ij-BaL.title" = "Bluetooth ist deaktiviert";
+
+/* Class = "NSTextFieldCell"; title = "No paired device found!"; ObjectID = "Wnu-CW-ZjC"; */
+"Wnu-CW-ZjC.title" = "Keine gekoppelten Geräte verfügbar!";
+
+/* Class = "NSTextFieldCell"; title = "Use the System Preferences to pair a new bluetooth device"; ObjectID = "hHg-Lk-oza"; */
+"hHg-Lk-oza.title" = "Neue Geräte können über die Bluetooth-Systemeinstellungen hinzugefügt werden";
