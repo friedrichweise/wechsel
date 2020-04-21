@@ -44,7 +44,7 @@ class MainMenuController: NSObject {
             if let serializedShortcut = UserDefaults.standard.data(forKey: modalHotKeyDefaultsKey) {
                 let shortcut = NSKeyedUnarchiver.unarchiveObject(with: serializedShortcut) as! MASShortcut
                 showModalMenuItem.keyEquivalent = shortcut.keyCodeStringForKeyEquivalent
-                showModalMenuItem.keyEquivalentModifierMask = NSEvent.ModifierFlags(rawValue: shortcut.modifierFlags)
+                showModalMenuItem.keyEquivalentModifierMask = NSEvent.ModifierFlags(rawValue: shortcut.modifierFlags.rawValue)
             }
         }
     }
