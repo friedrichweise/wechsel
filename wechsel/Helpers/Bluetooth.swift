@@ -9,7 +9,7 @@
 import Foundation
 import IOBluetooth
 
-protocol BluetoothWatcherDelegate: class {
+protocol BluetoothWatcherDelegate: AnyObject {
     func deviceConnected()
     func deviceDisconnected()
 }
