@@ -33,8 +33,8 @@ class Bluetooth: IOBluetoothRFCOMMChannelDelegate {
     }
 
     private func fetchDevices() -> [IOBluetoothDevice] {
-        guard var devices = IOBluetoothDevice.recentDevices(0) as? [IOBluetoothDevice] else {
-            print("Error accessing IOBluetoothDevice.recentDevices")
+        guard var devices = IOBluetoothDevice.pairedDevices() as? [IOBluetoothDevice] else {
+            print("Error accessing IOBluetoothDevice.pairedDevices")
             return []
         }
         
