@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,17 +17,17 @@
         <window title="wechsel" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="F0z-JX-Cv5" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" nonactivatingPanel="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
+            <rect key="contentRect" x="196" y="240" width="493" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1200"/>
             <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <rect key="frame" x="0.0" y="0.0" width="493" height="270"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <stackView distribution="equalSpacing" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CaX-wy-cAC">
-                        <rect key="frame" x="30" y="112" width="420" height="46"/>
+                        <rect key="frame" x="37" y="113" width="420" height="44"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lja-wI-mRx">
-                                <rect key="frame" x="-2" y="25" width="194" height="21"/>
+                                <rect key="frame" x="-2" y="24" width="193" height="20"/>
                                 <textFieldCell key="cell" title="No paired device found!" id="Wnu-CW-ZjC">
                                     <font key="font" metaFont="systemSemibold" size="17"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -35,7 +35,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-u7-rzh">
-                                <rect key="frame" x="-2" y="0.0" width="362" height="17"/>
+                                <rect key="frame" x="-2" y="0.0" width="362" height="16"/>
                                 <textFieldCell key="cell" title="Use the System Preferences to pair a new bluetooth device" id="hHg-Lk-oza">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -56,23 +56,22 @@
                             <real value="3.4028234663852886e+38"/>
                         </customSpacing>
                     </stackView>
-                    <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="42" horizontalPageScroll="10" verticalLineScroll="42" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf6-5h-7UX">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="Lc0-7r-56Q">
-                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                    <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="44" horizontalPageScroll="10" verticalLineScroll="44" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf6-5h-7UX">
+                        <rect key="frame" x="0.0" y="0.0" width="493" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="Lc0-7r-56Q">
+                            <rect key="frame" x="0.0" y="0.0" width="493" height="270"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnResizing="NO" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" rowHeight="40" viewBased="YES" id="tDl-7J-6G6">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="493" height="270"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <size key="intercellSpacing" width="0.0" height="4"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn identifier="name" editable="NO" width="477" minWidth="40" maxWidth="1000" id="eL8-em-4gt">
+                                        <tableColumn identifier="name" editable="NO" width="456" minWidth="40" maxWidth="1000" id="eL8-em-4gt">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Name">
-                                                <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
@@ -81,10 +80,9 @@
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
-                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                             <prototypeCellViews>
                                                 <tableCellView identifier="bluetoothRow" id="qZ5-1P-vz0" customClass="BluetoothTableCellView" customModule="wechsel" customModuleProvider="target">
-                                                    <rect key="frame" x="1" y="1" width="477" height="40"/>
+                                                    <rect key="frame" x="10" y="2" width="468" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bi4-N0-Qmn">
@@ -113,16 +111,16 @@
                                                     </subviews>
                                                 </tableCellView>
                                                 <tableCellView identifier="deviceRow" id="lyV-et-DT6" customClass="DeviceTableCellView" customModule="wechsel" customModuleProvider="target">
-                                                    <rect key="frame" x="1" y="43" width="477" height="40"/>
+                                                    <rect key="frame" x="10" y="46" width="468" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pqK-0P-Ig7">
-                                                            <rect key="frame" x="10" y="14" width="12" height="12"/>
+                                                            <rect key="frame" x="8" y="14" width="12" height="12"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="statusInactive" id="Xxf-I8-o9u"/>
                                                         </imageView>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TgL-c4-Ucg">
-                                                            <rect key="frame" x="36" y="9" width="290" height="21"/>
+                                                            <rect key="frame" x="36" y="11" width="290" height="19"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="S8e-YN-9wj">
                                                                 <font key="font" metaFont="system" size="16"/>
@@ -131,8 +129,8 @@
                                                             </textFieldCell>
                                                         </textField>
                                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dG3-Pm-ZGN">
-                                                            <rect key="frame" x="356" y="9" width="107" height="14"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <rect key="frame" x="360" y="13" width="107" height="14"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                             <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Label" id="HMf-Ap-STb">
                                                                 <font key="font" metaFont="smallSystem"/>
                                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -163,7 +161,7 @@
                             <nil key="backgroundColor"/>
                         </clipView>
                         <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Mbg-ik-0D6">
-                            <rect key="frame" x="0.0" y="254" width="480" height="16"/>
+                            <rect key="frame" x="0.0" y="254" width="487" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="eCu-tf-Q8D">
@@ -180,6 +178,7 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
+            <point key="canvasLocation" x="139.5" y="233"/>
         </window>
         <viewController id="Hck-wl-W32" customClass="ViewController" customModule="wechsel" customModuleProvider="target">
             <connections>
@@ -223,7 +222,7 @@
         </textField>
     </objects>
     <resources>
-        <image name="NSActionTemplate" width="14" height="14"/>
+        <image name="NSActionTemplate" width="15" height="15"/>
         <image name="bluetoothDisabled" width="100" height="100"/>
         <image name="statusInactive" width="100" height="100"/>
     </resources>
