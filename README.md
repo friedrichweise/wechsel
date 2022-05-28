@@ -14,12 +14,29 @@ brew cask install friedrichweise/wechsel/wechsel
 ```
 or download the application from the <a href="https://github.com/friedrichweise/wechsel/releases">release-page</a>.
 
+#### Problem: “wechsel.app” is damaged and can’t be opened. You should move it to the Bin.
+Run:
+```sh
+xattr -cr /Applications/wechsel.app
+```
+
 ### Development Setup
 ```sh
 git clone git@github.com:friedrichweise/wechsel.git
 carthage update --platform macos
 open wechsel.xcodeproj
 ```
+
+### Create a new release
+* update version Number in "Project Settings" -> "Target" -> "wechsel"
+* run "Product" -> "Archive"
+* draft an new release on github and upload the zipped `wechsel.app`
+* publish the release
+* edit wechsel.ruby in `/usr/local/Homebrew/Library/Taps/friedrichweise/homebrew-wechsel/Casks`
+    * bump version number
+    * update checksum for zip file
+    * run `brew style wechsel` and `brew audit wechsel`
+    * push changes to https://github.com/friedrichweise/homebrew-wechsel
 
 ### Dependencies
 * <a href="https://github.com/shpakovski/MASShortcut">MASShortcut</a> v2.4
