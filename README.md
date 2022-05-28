@@ -22,6 +22,6 @@ open wechsel.xcodeproj
 ```
 
 ### Dependencies
-* <a href="https://github.com/shpakovski/MASShortcut">MASShortcut</a> v2.3.6
-* <a href="https://github.com/sindresorhus/LaunchAtLogin">LaunchAtLogin</a> v2.5.0
+* <a href="https://github.com/shpakovski/MASShortcut">MASShortcut</a> v2.4
+* <a href="https://github.com/sindresorhus/LaunchAtLogin">LaunchAtLogin</a> v4.2.0
 * <a href="https://github.com/zemirco/swift-timeago">swift-timeago</a>
